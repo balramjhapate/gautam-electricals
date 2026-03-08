@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bhopal-ac-service.com/sitemap.xml
