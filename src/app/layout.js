@@ -14,19 +14,19 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "AC Service Bhopal & Indore | 24/7 AC Repair & Maintenance",
+  title: "Best AC Repair in Bhopal | 24/7 Emergency AC Repair & Service",
   description:
-    "Professional AC servicing, repair, installation and maintenance in Bhopal and Indore, Madhya Pradesh. 24/7 emergency service available. Call +91 8889539174 now!",
+    "Professional AC repair, servicing, installation and maintenance in Bhopal and Indore, Madhya Pradesh. 24/7 emergency repair available. Call +91 8889539174 now!",
   keywords:
-    "AC service Bhopal, AC repair Bhopal, AC service Indore, AC repair Indore, AC maintenance Madhya Pradesh, AC installation Bhopal, 24/7 AC service",
+    "Best AC repair Bhopal, AC repair Bhopal, AC service Bhopal, AC service Indore, AC repair Indore, AC maintenance Madhya Pradesh, AC installation Bhopal, 24/7 AC repair",
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1",
   alternates: {
     canonical: "https://bhopal-ac-service.com/", // Placeholder domain
   },
   openGraph: {
-    title: "AC Service Bhopal & Indore | 24/7 AC Repair",
-    description: "Professional AC services in Bhopal & Indore. Call +91 8889539174.",
+    title: "Best AC Repair in Bhopal & Indore | 24/7 AC Repair",
+    description: "Professional AC repair & services in Bhopal & Indore. Call +91 8889539174.",
     type: "website",
     url: "https://bhopal-ac-service.com/",
   },
@@ -36,11 +36,12 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "AC Service Bhopal & Indore",
-  description: "Professional AC servicing, repair, and installation in Bhopal and Indore",
+  description: "Professional AC repair, servicing, and installation in Bhopal and Indore",
   telephone: "+91-8889539174",
   email: "bhopalservice998@gmail.com",
   address: {
     "@type": "PostalAddress",
+    "streetAddress": "Nariyal Kheda, Near DIG Bungalow, Old Bhopal",
     "addressLocality": "Bhopal",
     "addressRegion": "Madhya Pradesh",
     "addressCountry": "IN",
@@ -93,14 +94,14 @@ export default function RootLayout({ children }) {
         <Analytics />
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18065485961"
         />
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'AW-18065485961');
           `}
         </Script>
         <EmergencyBanner />

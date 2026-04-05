@@ -21,7 +21,7 @@ export default function Hero() {
                     <div className="relative w-full max-w-md aspect-[16/9] rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                         <img
                             src="/images/hero-family.png"
-                            alt="Professional AC Servicing Bhopal & Indore"
+                            alt="Professional AC Repair Bhopal & Indore"
                             className="w-full h-full object-cover object-center"
                             loading="lazy"
                         />
@@ -41,7 +41,7 @@ export default function Hero() {
                         data-aos-delay="300"
                         className="text-[32px] sm:text-[38px] lg:text-[68px] font-[800] text-ac-gray-dark leading-[1.05] mb-5 tracking-tight"
                     >
-                        Professional <span className="text-ac-primary">AC Servicing</span> in Bhopal & Indore
+                        Professional <span className="text-ac-primary">AC Repair</span> in Bhopal & Indore
                     </h1>
 
                     {/* Subheading */}
@@ -50,7 +50,7 @@ export default function Hero() {
                         data-aos-delay="500"
                         className="text-[17px] text-ac-text-muted mb-6 max-w-[560px] leading-relaxed"
                     >
-                        Expert air conditioning maintenance, repair, and installation services across
+                        Expert air conditioning repair, maintenance, and installation services across
                         <strong> Bhopal</strong> and <strong>Indore</strong>. Serving <strong>Arera Colony</strong>,
                         <strong> MP Nagar</strong>, <strong>Vijay Nagar</strong>, and major areas with
                         certified technicians and 24/7 emergency support.
@@ -122,7 +122,7 @@ export default function Hero() {
                     >
                         <img
                             src="/images/hero-family.png"
-                            alt="Professional AC Servicing Bhopal"
+                            alt="Professional AC Repair Bhopal"
                             className="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-500"
                             loading="lazy"
                         />

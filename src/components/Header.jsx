@@ -26,7 +26,7 @@ export default function Header() {
                             <i className="fa-solid fa-snowflake"></i>
                         </div>
                         <div className="flex flex-col leading-none">
-                            <span className="font-bold text-ac-gray-dark text-base tracking-tight">AC Service</span>
+                            <span className="font-bold text-ac-gray-dark text-base tracking-tight">AC Repair</span>
                             <span className="text-ac-primary text-[9px] font-bold tracking-[0.15em] uppercase">Bhopal & Indore</span>
                         </div>
                     </Link>

@@ -36,7 +36,8 @@ export default function PrivacyPolicy() {
                 <p className="text-ac-text-muted leading-relaxed">
                     If you have any questions about this Privacy Policy, please contact us at:
                     <br /><br />
-                    <strong>AC Service Bhopal & Indore</strong><br />
+                    <strong>AC Repair Bhopal & Indore</strong><br />
+                    Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
                     Email: bhopalservice998@gmail.com<br />
                     Phone: +91 8889539174
                 </p>

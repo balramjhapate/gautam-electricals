@@ -35,13 +35,13 @@ export default function Footer() {
                     <div className="footer-col group col-span-2 lg:col-span-1">
                         <div className="footer-logo flex items-center gap-2 text-xl font-bold text-white mb-3">
                             <i className="fa-solid fa-wrench text-ac-primary"></i>
-                            AC SERVICE BHOPAL & INDORE
+                            AC REPAIR BHOPAL & INDORE
                         </div>
                         <p className="footer-tagline text-sm text-white/60 mb-3 italic">
-                            "Your trusted AC service partner since 2014"
+                            "Your trusted AC repair partner since 2014"
                         </p>
                         <p className="footer-desc text-sm leading-relaxed mb-5">
-                            Professional AC servicing, repair, and installation across Bhopal & Indore with certified technicians and 24/7 emergency support.
+                            Professional AC repair, servicing, and installation across Bhopal & Indore with certified technicians and 24/7 emergency support.
                         </p>
                         <div className="social-icons flex gap-3 mt-5">
                             <a href="https://www.facebook.com/profile.php?id=61577739039641&sk=reels_tab" target="_blank" rel="noopener noreferrer" className="social-icon fb w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white transition-all duration-500 hover:bg-[#1877f2] hover:rotate-[360deg] hover:scale-110">
@@ -104,8 +104,8 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <i className="fa-solid fa-location-dot text-ac-red mt-1"></i>
                                 <div className="text-sm leading-relaxed">
-                                    <p>Bhopal, Madhya Pradesh</p>
-                                    <p>Indore, Madhya Pradesh</p>
+                                    <p>Nariyal Kheda, Near DIG Bungalow, Old Bhopal</p>
+                                    <p>Madhya Pradesh, India</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
@@ -126,7 +126,7 @@ export default function Footer() {
             <div className="footer-bottom border-t border-white/10 py-5 mt-10">
                 <div className="max-w-container flex flex-col md:flex-row justify-between items-center gap-4">
                     <span className="text-[12px] text-white/50 text-center md:text-left">
-                        © 2026 AC Service Bhopal & Indore. All rights reserved.
+                        © {new Date().getFullYear()} AC Repair Bhopal & Indore. All rights reserved.
                     </span>
                     <div className="footer-legal flex gap-5 text-[12px] text-white/50">
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

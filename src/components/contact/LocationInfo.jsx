@@ -43,13 +43,13 @@ export default function LocationInfo() {
                             <div>
                                 <h3 className="text-[13px] font-bold text-gray-400 uppercase tracking-wider mb-2">Address</h3>
                                 <p className="text-[16px] text-gray-700 font-medium leading-relaxed">
-                                    Vivek Enterprises, Zone-II, MP Nagar, Bhopal, Madhya Pradesh 462011, India
+                                    Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh, India
                                 </p>
                             </div>
                             <div>
                                 <h3 className="text-[13px] font-bold text-gray-400 uppercase tracking-wider mb-2">Landmark</h3>
                                 <p className="text-[15px] text-gray-600 font-medium">
-                                    Near Mansarovar Complex, MP Nagar
+                                    Near DIG Bungalow
                                 </p>
                             </div>
                             <div className="pt-2">

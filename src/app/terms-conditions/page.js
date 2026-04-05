@@ -34,7 +34,8 @@ export default function TermsConditions() {
                 <h2 className="text-2xl font-semibold mb-4 text-ac-primary">4. Contact Information</h2>
                 <p className="text-ac-text-muted leading-relaxed">
                     For any legal inquiries, please contact:<br /><br />
-                    <strong>AC Service Bhopal & Indore</strong><br />
+                    <strong>AC Repair Bhopal & Indore</strong><br />
+                    Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
                     Email: bhopalservice998@gmail.com<br />
                     Phone: +91 8889539174
                 </p>
