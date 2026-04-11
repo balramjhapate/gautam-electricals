@@ -5,8 +5,11 @@ import BrandsWeService from '../../components/services/BrandsWeService';
 import EmergencyCTA from '../../components/EmergencyCTA';
 
 export const metadata = {
-    title: 'Our AC Services - Bhopal & Indore | Expert Repair & Maintenance',
-    description: 'Explore our comprehensive range of AC services in Bhopal and Indore. Specializing in Window split ACs, AMC contracts, repair, and deep cleaning.',
+    title: 'AC Service Bhopal — Repair, Gas Refill, Cleaning | ₹499 se',
+    description: 'AC repair, gas refilling, jet wash cleaning, installation in Bhopal & Indore. Certified technicians, same day service. Call 8889539174.',
+    alternates: {
+        canonical: "https://ac-service-bhopal-indore.vercel.app/services",
+    },
 };
 
 export default function ServicesPage() {

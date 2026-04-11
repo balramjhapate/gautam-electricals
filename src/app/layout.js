@@ -1,12 +1,10 @@
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import EmergencyBanner from "../components/EmergencyBanner";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import AOSInit from "../components/AOSInit";
-import FloatingActions from "../components/FloatingActions";
 import Analytics from "../components/Analytics";
+import LayoutWrapper from "../components/LayoutWrapper";
+import GlobalClickTracker from "../components/GlobalClickTracker";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,58 +20,40 @@ export const metadata = {
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1",
   alternates: {
-    canonical: "https://bhopal-ac-service.com/", // Placeholder domain
+    canonical: "https://ac-service-bhopal-indore.vercel.app/",
   },
   openGraph: {
     title: "Best AC Repair in Bhopal & Indore | 24/7 AC Repair",
     description: "Professional AC repair & services in Bhopal & Indore. Call +91 8889539174.",
     type: "website",
-    url: "https://bhopal-ac-service.com/",
+    url: "https://ac-service-bhopal-indore.vercel.app/",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "AC Service Bhopal & Indore",
-  description: "Professional AC repair, servicing, and installation in Bhopal and Indore",
-  telephone: "+91-8889539174",
-  email: "bhopalservice998@gmail.com",
-  address: {
+  "name": "AC Repair Bhopal & Indore",
+  "telephone": "+918889539174",
+  "priceRange": "₹499 - ₹4999",
+  "address": {
     "@type": "PostalAddress",
     "streetAddress": "Nariyal Kheda, Near DIG Bungalow, Old Bhopal",
     "addressLocality": "Bhopal",
     "addressRegion": "Madhya Pradesh",
-    "addressCountry": "IN",
+    "postalCode": "462001",
+    "addressCountry": "IN"
   },
-  areaServed: ["Bhopal", "Indore"],
-  openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-17:00", "Su 10:00-16:00"],
-  priceRange: "₹299 - ₹2999",
-  serviceType: "AC Repair, AC Service, AC Installation",
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "AC Services",
-    itemListElement: [
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", "name": "AC Maintenance" },
-        price: "499",
-        priceCurrency: "INR",
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", "name": "AC Repair" },
-        price: "799",
-        priceCurrency: "INR",
-      },
-      {
-        "@type": "Offer",
-        itemOffered: { "@type": "Service", "name": "AC Installation" },
-        price: "2999",
-        priceCurrency: "INR",
-      },
-    ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 23.2599,
+    "longitude": 77.4126
   },
+  "url": "https://ac-service-bhopal-indore.vercel.app",
+  "openingHours": "Mo-Su 08:00-21:00",
+  "description": "Professional AC repair, service, and installation in Bhopal and Indore. Same day service available from ₹499.",
+  "areaServed": ["Bhopal", "Indore"],
+  "serviceType": ["AC Repair", "AC Service", "AC Installation", "AC Gas Refill", "AC Cleaning"]
 };
 
 export default function RootLayout({ children }) {
@@ -88,15 +68,48 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Microsoft Clarity */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+              })(window, document, "clarity", "script", "wa2qlbh4a6");
+            `
+          }}
+        />
       </head>
       <body className={`${inter.variable} antialiased flex flex-col min-h-screen`}>
         <AOSInit />
         <Analytics />
+        <GlobalClickTracker />
+
+        {/* Google Analytics - G-470T5TSRES */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-470T5TSRES"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-470T5TSRES');
+            
+            // Allow sending gtag events successfully if they trigger before load
+            window.gtag = gtag;
+          `}
+        </Script>
+
+        {/* Keep AW script as well if exist? Original had AW-18065485961 */}
         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=AW-18065485961"
         />
-        <Script id="google-analytics">
+        <Script id="google-ads">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -104,13 +117,10 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-18065485961');
           `}
         </Script>
-        <EmergencyBanner />
-        <Header />
-        <main className="flex-grow">
+
+        <LayoutWrapper>
           {children}
-        </main>
-        <Footer />
-        <FloatingActions />
+        </LayoutWrapper>
       </body>
     </html>
   );

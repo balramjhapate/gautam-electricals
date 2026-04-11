@@ -35,14 +35,32 @@ export default function Hero() {
                 {/* LEFT COLUMN - TEXT CONTENT (48%) */}
                 <div className="w-full lg:w-[48%] flex flex-col items-center lg:items-start text-center lg:text-left">
 
+                    {/* Prominent Mobile CTA at very top of text */}
+                    <a
+                        href="tel:+918889539174"
+                        onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }}
+                        className="w-[90%] md:w-full max-w-sm bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-6 rounded-lg shadow-lg text-lg flex items-center justify-center gap-2 transition-transform transform hover:-translate-y-0.5 active:scale-95 mb-6 animate-pulse border-2 border-green-500"
+                    >
+                        <i className="fa-solid fa-phone"></i> Call Now: 8889539174
+                    </a>
+
                     {/* Main Heading */}
                     <h1
                         data-aos="fade-up"
                         data-aos-delay="300"
-                        className="text-[32px] sm:text-[38px] lg:text-[68px] font-[800] text-ac-gray-dark leading-[1.05] mb-5 tracking-tight"
+                        className="text-[32px] sm:text-[38px] lg:text-[68px] font-[800] text-ac-gray-dark leading-[1.05] mb-4 tracking-tight"
                     >
                         Professional <span className="text-ac-primary">AC Repair</span> in Bhopal & Indore
                     </h1>
+
+                    {/* Highlighted Price line */}
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        className="text-[16px] md:text-[18px] font-bold text-gray-800 bg-yellow-100 px-4 py-2 rounded-lg border border-yellow-300 shadow-sm mb-5 w-full max-w-md mx-auto lg:mx-0"
+                    >
+                        AC Service ₹499 se | Gas Refill ₹999 | Same Day Available
+                    </div>
 
                     {/* Subheading */}
                     <p
@@ -91,6 +109,7 @@ export default function Hero() {
                             href="tel:+918889539174"
                             data-aos="zoom-in"
                             data-aos-delay="1000"
+                            onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }}
                             className="bg-white text-ac-primary border border-ac-primary/40 px-7 py-3 rounded-lg text-[16px] font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:border-ac-primary hover:bg-ac-primary/5 hover:-translate-y-0.5 active:scale-95 w-full"
                         >
                             <i className="fa-solid fa-phone text-sm"></i> Call: +91 8889539174
@@ -103,7 +122,7 @@ export default function Hero() {
                         data-aos-delay="1100"
                         className="text-ac-text-muted text-[14px] font-medium"
                     >
-                        Emergency Service Available 24/7: <a href="tel:+918889539174" className="text-ac-red font-bold hover:underline tracking-wide">+91 8889539174</a>
+                        Emergency Service Available 24/7: <a href="tel:+918889539174" onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }} className="text-ac-red font-bold hover:underline tracking-wide">+91 8889539174</a>
                     </div>
 
                 </div>
@@ -118,6 +137,7 @@ export default function Hero() {
                         href="https://wa.me/918889539174?text=Hi,%20I'm%20interested%20in%20your%20AC%20services!"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', {event_category: 'contact', event_label: 'whatsapp'}); }}
                         className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl border border-gray-100 block hover:-translate-y-1 transition-all duration-300"
                     >
                         <img

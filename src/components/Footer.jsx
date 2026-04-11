@@ -89,13 +89,13 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <i className="fa-solid fa-phone text-ac-primary mt-1"></i>
                                 <div className="flex flex-col">
-                                    <a href="tel:+918889539174" className="text-sm hover:text-ac-primary transition-colors font-medium">Phone: +91 8889539174</a>
-                                    <a href="tel:+918889539174" className="text-xs text-ac-red font-bold uppercase mt-1">🚨 Emergency: +91 8889539174</a>
+                                    <a href="tel:+918889539174" onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }} className="text-sm hover:text-ac-primary transition-colors font-medium">Phone: +91 8889539174</a>
+                                    <a href="tel:+918889539174" onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }} className="text-xs text-ac-red font-bold uppercase mt-1">🚨 Emergency: +91 8889539174</a>
                                 </div>
                             </li>
                             <li className="flex items-center gap-3">
                                 <i className="fa-brands fa-whatsapp text-[#10b981]"></i>
-                                <a href="https://wa.me/918889539174" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-ac-primary transition-colors">WhatsApp: +91 8889539174</a>
+                                <a href="https://wa.me/918889539174" target="_blank" rel="noopener noreferrer" onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', {event_category: 'contact', event_label: 'whatsapp'}); }} className="text-sm hover:text-ac-primary transition-colors">WhatsApp: +91 8889539174</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <i className="fa-solid fa-envelope text-white/70"></i>
@@ -111,8 +111,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3">
                                 <i className="fa-regular fa-clock text-ac-primary mt-1"></i>
                                 <div className="text-xs opacity-80 leading-relaxed">
-                                    <p>Mon–Fri: 9 AM – 7 PM</p>
-                                    <p>Sat: 9 AM – 5 PM</p>
+                                    <p>Mon–Sun: 8 AM – 9 PM</p>
                                     <p className="text-ac-red font-bold">Emergency: 24/7</p>
                                 </div>
                             </li>
