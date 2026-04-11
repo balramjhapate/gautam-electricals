@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import LandingForm from '../../components/LandingForm';
 
 export const metadata = {
     title: "AC Repair Bhopal | Same Day Service ₹499 | Call 8889539174",
@@ -22,7 +23,9 @@ export default function LandingPage() {
             </div>
 
             {/* HERO SECTION */}
-            <section className="px-4 py-10 md:py-16 text-center max-w-4xl mx-auto">
+            <section className="px-4 py-8 md:py-12 text-center max-w-4xl mx-auto">
+                <LandingForm />
+
                 <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
                     AC Repair & Service in Bhopal | <span className="text-blue-600">Same Day Service</span>
                 </h1>
