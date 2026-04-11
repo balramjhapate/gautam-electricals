@@ -7,6 +7,10 @@ export const metadata = {
     alternates: {
         canonical: "https://ac-service-bhopal-indore.vercel.app/landing",
     },
+    robots: {
+        index: false,
+        follow: false
+    }
 };
 
 export default function LandingPage() {
@@ -14,7 +18,7 @@ export default function LandingPage() {
         <div className="bg-white min-h-screen font-sans pb-20 md:pb-0">
             {/* TOP BAR (red background) */}
             <div className="bg-red-600 text-white text-center py-2 px-4 text-sm font-bold tracking-wide">
-                Summer Special | AC Service Sirf ₹499 | Same Day Available | Bhopal & Indore
+                🔥 Summer Special — AC Service Sirf ₹499 | Aaj Book Karo, Kal Service
             </div>
 
             {/* HERO SECTION */}
