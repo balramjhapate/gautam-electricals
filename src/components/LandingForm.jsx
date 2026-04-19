@@ -41,7 +41,7 @@ export default function LandingForm() {
                         type="text" 
                         value={formData.name} 
                         onChange={(e) => update('name', e.target.value)} 
-                        placeholder="Aapka naam likhein" 
+                        placeholder="Name" 
                         className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 transition-all" 
                         required 
                     />
@@ -57,13 +57,22 @@ export default function LandingForm() {
                     />
                 </div>
                 <div>
-                    <textarea 
-                        rows="2" 
+                    <select 
                         value={formData.problem} 
                         onChange={(e) => update('problem', e.target.value)} 
-                        placeholder="Kya problem hai? Jaise — AC thanda nahi kar raha, gas refill, service, repair, installation..." 
-                        className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm text-gray-900 placeholder:text-gray-400 focus:bg-white focus:outline-none focus:border-blue-500 transition-all resize-none"
-                    ></textarea>
+                        className={`w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg text-sm transition-all focus:bg-white focus:outline-none focus:border-blue-500 ${!formData.problem ? 'text-gray-400' : 'text-gray-900'}`}
+                        required
+                    >
+                        <option value="" disabled hidden>Select Service Type</option>
+                        <option value="AC Service" className="text-gray-900">AC Service</option>
+                        <option value="AC Repair" className="text-gray-900">AC Repair</option>
+                        <option value="Washing Machine Service" className="text-gray-900">Washing Machine Service</option>
+                        <option value="Washing Machine Repair" className="text-gray-900">Washing Machine Repair</option>
+                        <option value="Microwave Repair" className="text-gray-900">Microwave Repair</option>
+                        <option value="Fridge Repair" className="text-gray-900">Fridge Repair</option>
+                        <option value="Geyser Repair" className="text-gray-900">Geyser Repair</option>
+                        <option value="Chimney Repair" className="text-gray-900">Chimney Repair</option>
+                    </select>
                 </div>
                 <div className="pt-2">
                     <button 

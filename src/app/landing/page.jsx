@@ -3,8 +3,8 @@ import Image from 'next/image';
 import LandingForm from '../../components/LandingForm';
 
 export const metadata = {
-    title: "AC Repair Bhopal | Same Day Service ₹499 | Call 8889539174",
-    description: "AC kharab ho gayi? Bhopal mein same day AC repair service ₹499 se. Gas refill ₹999. 30 min mein technician. Call ya WhatsApp: 8889539174",
+    title: "AC Repair Bhopal | Same Day Service ₹449 | Call 8889539174",
+    description: "AC kharab ho gayi? Bhopal mein same day AC repair service ₹449 se. Gas refill ₹999. 30 min mein technician. Call ya WhatsApp: 8889539174",
     alternates: {
         canonical: "https://ac-service-bhopal-indore.vercel.app/landing",
     },
@@ -19,7 +19,7 @@ export default function LandingPage() {
         <div className="bg-white min-h-screen font-sans pb-20 md:pb-0">
             {/* TOP BAR (red background) */}
             <div className="bg-red-600 text-white text-center py-2 px-4 text-sm font-bold tracking-wide">
-                🔥 Summer Special — AC Service Sirf ₹499 | Aaj Book Karo, Kal Service
+                🔥 Summer Special — AC Service | Same Day Service, Starting from ₹449
             </div>
 
             {/* HERO SECTION */}
@@ -30,7 +30,7 @@ export default function LandingPage() {
                     AC Repair & Service in Bhopal | <span className="text-blue-600">Same Day Service</span>
                 </h1>
                 <p className="text-lg md:text-xl text-gray-600 mb-8 font-medium">
-                    Certified technicians • ₹499 se shuru • 30 min mein aayenge
+                    Certified technicians • ₹449 se shuru • 30 min mein aayenge
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10 w-full max-w-lg mx-auto">
@@ -53,7 +53,7 @@ export default function LandingPage() {
                 {/* Trust Badges */}
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm md:text-base font-semibold text-gray-700 bg-gray-50 py-4 px-2 rounded-xl border border-gray-200 shadow-sm">
                     <span className="flex items-center gap-1.5"><i className="fa-solid fa-circle-check text-green-500"></i> Same Day Service</span>
-                    <span className="flex items-center gap-1.5"><i className="fa-solid fa-circle-check text-green-500"></i> ₹499 se Shuru</span>
+                    <span className="flex items-center gap-1.5"><i className="fa-solid fa-circle-check text-green-500"></i> ₹449 se Shuru</span>
                     <span className="flex items-center gap-1.5"><i className="fa-solid fa-circle-check text-green-500"></i> 10+ Saal Experience</span>
                     <span className="flex items-center gap-1.5"><i className="fa-solid fa-circle-check text-green-500"></i> 5000+ Customers</span>
                 </div>
@@ -67,7 +67,7 @@ export default function LandingPage() {
                         {/* Box 1 */}
                         <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-lg transition-shadow">
                             <h3 className="text-xl font-bold text-gray-800 mb-2">AC Basic Service</h3>
-                            <div className="text-4xl font-extrabold text-blue-600 mb-4">₹499</div>
+                            <div className="text-4xl font-extrabold text-blue-600 mb-4">₹449</div>
                             <ul className="text-sm text-gray-600 mb-6 space-y-2 text-left">
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Filter cleaning</li>
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Water wash</li>
