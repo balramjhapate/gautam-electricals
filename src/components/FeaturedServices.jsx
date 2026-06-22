@@ -1,14 +1,12 @@
-﻿"use client";
+"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
+import SVGIcon from './SVGIcon';
 
 const allServices = [
-    // AC
     {
-        appliance: 'AC',
-        title: 'AC Deep Cleaning (Jet Pump)',
-        icon: 'fa-solid fa-spray-can-sparkles',
-        iconBg: 'bg-blue-100', iconColor: 'text-blue-600',
+        appliance: 'AC', title: 'AC Deep Cleaning (Jet Pump)',
+        icon: 'spray', iconBg: 'bg-blue-100', iconColor: 'text-blue-600',
         headerBg: 'bg-gradient-to-br from-blue-50 to-indigo-50',
         category: 'Cleaning', categoryBg: 'bg-blue-100 text-blue-700',
         price: '₹699',
@@ -18,24 +16,19 @@ const allServices = [
         waText: 'AC+Deep+Cleaning',
     },
     {
-        appliance: 'AC',
-        title: '24/7 Emergency AC Repair',
-        icon: 'fa-solid fa-bolt',
-        iconBg: 'bg-orange-100', iconColor: 'text-orange-500',
+        appliance: 'AC', title: '24/7 Emergency AC Repair',
+        icon: 'bolt', iconBg: 'bg-orange-100', iconColor: 'text-orange-500',
         headerBg: 'bg-gradient-to-br from-orange-50 to-orange-100/60',
         category: 'Emergency', categoryBg: 'bg-orange-100 text-orange-700',
         price: '₹999',
         description: 'Round-the-clock emergency repair with rapid response across Bhopal & Prayagraj',
         includes: ['Same-day response guarantee', 'All brands covered'],
         badge: { text: '24/7', type: 'available' },
-        isEmergency: true,
-        waText: 'AC+Emergency+Repair',
+        isEmergency: true, waText: 'AC+Emergency+Repair',
     },
     {
-        appliance: 'AC',
-        title: 'AC Gas Refilling',
-        icon: 'fa-solid fa-gas-pump',
-        iconBg: 'bg-purple-100', iconColor: 'text-purple-600',
+        appliance: 'AC', title: 'AC Gas Refilling',
+        icon: 'gaspump', iconBg: 'bg-purple-100', iconColor: 'text-purple-600',
         headerBg: 'bg-gradient-to-br from-purple-50 to-violet-50',
         category: 'Gas', categoryBg: 'bg-purple-100 text-purple-700',
         price: '₹999',
@@ -44,12 +37,9 @@ const allServices = [
         badge: { text: 'Popular', type: 'popular' },
         waText: 'AC+Gas+Refilling',
     },
-    // Washing Machine
     {
-        appliance: 'Washing Machine',
-        title: 'Washing Machine Repair',
-        icon: 'fa-solid fa-rotate',
-        iconBg: 'bg-teal-100', iconColor: 'text-teal-600',
+        appliance: 'Washing Machine', title: 'Washing Machine Repair',
+        icon: 'rotate', iconBg: 'bg-teal-100', iconColor: 'text-teal-600',
         headerBg: 'bg-gradient-to-br from-teal-50 to-cyan-50',
         category: 'Repair', categoryBg: 'bg-teal-100 text-teal-700',
         price: '₹299',
@@ -59,10 +49,8 @@ const allServices = [
         waText: 'Washing+Machine+Repair',
     },
     {
-        appliance: 'Washing Machine',
-        title: 'Drum Cleaning Service',
-        icon: 'fa-solid fa-soap',
-        iconBg: 'bg-sky-100', iconColor: 'text-sky-600',
+        appliance: 'Washing Machine', title: 'Drum Cleaning Service',
+        icon: 'soap', iconBg: 'bg-sky-100', iconColor: 'text-sky-600',
         headerBg: 'bg-gradient-to-br from-sky-50 to-blue-50',
         category: 'Cleaning', categoryBg: 'bg-sky-100 text-sky-700',
         price: '₹499',
@@ -70,12 +58,9 @@ const allServices = [
         includes: ['Drum descaling & sanitizing', 'Pump filter cleaning'],
         waText: 'Washing+Machine+Drum+Cleaning',
     },
-    // Refrigerator
     {
-        appliance: 'Refrigerator',
-        title: 'Refrigerator Repair',
-        icon: 'fa-solid fa-snowflake',
-        iconBg: 'bg-sky-100', iconColor: 'text-sky-600',
+        appliance: 'Refrigerator', title: 'Refrigerator Repair',
+        icon: 'snowflake', iconBg: 'bg-sky-100', iconColor: 'text-sky-600',
         headerBg: 'bg-gradient-to-br from-sky-50 to-cyan-50',
         category: 'Repair', categoryBg: 'bg-sky-100 text-sky-700',
         price: '₹399',
@@ -83,12 +68,9 @@ const allServices = [
         includes: ['All brands: Samsung, LG, Whirlpool', 'Single & double door'],
         waText: 'Refrigerator+Repair',
     },
-    // Geyser
     {
-        appliance: 'Geyser',
-        title: 'Geyser / Water Heater Repair',
-        icon: 'fa-solid fa-fire-flame-curved',
-        iconBg: 'bg-red-100', iconColor: 'text-red-500',
+        appliance: 'Geyser', title: 'Geyser / Water Heater Repair',
+        icon: 'flame', iconBg: 'bg-red-100', iconColor: 'text-red-500',
         headerBg: 'bg-gradient-to-br from-red-50 to-orange-50',
         category: 'Repair', categoryBg: 'bg-red-100 text-red-700',
         price: '₹249',
@@ -96,12 +78,9 @@ const allServices = [
         includes: ['Heating element replacement', 'Thermostat & safety valve fix'],
         waText: 'Geyser+Repair',
     },
-    // RO
     {
-        appliance: 'RO',
-        title: 'RO Water Purifier Service',
-        icon: 'fa-solid fa-droplet',
-        iconBg: 'bg-cyan-100', iconColor: 'text-cyan-600',
+        appliance: 'RO', title: 'RO Water Purifier Service',
+        icon: 'droplet', iconBg: 'bg-cyan-100', iconColor: 'text-cyan-600',
         headerBg: 'bg-gradient-to-br from-cyan-50 to-blue-50',
         category: 'Service', categoryBg: 'bg-cyan-100 text-cyan-700',
         price: '₹199',
@@ -109,12 +88,9 @@ const allServices = [
         includes: ['All brands: Kent, Aquaguard, Livpure', 'Filter & membrane replacement'],
         waText: 'RO+Water+Purifier+Service',
     },
-    // Microwave
     {
-        appliance: 'Microwave',
-        title: 'Microwave Oven Repair',
-        icon: 'fa-solid fa-bolt',
-        iconBg: 'bg-orange-100', iconColor: 'text-orange-500',
+        appliance: 'Microwave', title: 'Microwave Oven Repair',
+        icon: 'bolt', iconBg: 'bg-orange-100', iconColor: 'text-orange-500',
         headerBg: 'bg-gradient-to-br from-orange-50 to-amber-50',
         category: 'Repair', categoryBg: 'bg-orange-100 text-orange-700',
         price: '₹199',
@@ -128,14 +104,12 @@ const applianceFilters = ['All', 'AC', 'Washing Machine', 'Refrigerator', 'Geyse
 
 export default function FeaturedServices() {
     const [active, setActive] = useState('All');
-
     const filtered = active === 'All' ? allServices : allServices.filter(s => s.appliance === active);
 
     return (
         <section id="services" className="py-20 bg-white">
             <div className="max-w-container mx-auto px-4">
 
-                {/* Header */}
                 <div className="text-center mb-10" data-aos="fade-up">
                     <h2 className="text-3xl md:text-[40px] font-[900] text-ac-gray-dark mb-3 tracking-tight">
                         Our <span className="text-ac-primary">Services</span>
@@ -153,8 +127,7 @@ export default function FeaturedServices() {
                             onClick={() => setActive(f)}
                             className={`snap-item flex-shrink-0 px-4 py-2 rounded-full text-[13px] font-bold transition-all border ${active === f
                                 ? 'bg-ac-primary text-white border-ac-primary shadow-md'
-                                : 'bg-white text-ac-text-muted border-gray-200 hover:border-ac-primary hover:text-ac-primary'
-                                }`}
+                                : 'bg-white text-ac-text-muted border-gray-200 hover:border-ac-primary hover:text-ac-primary'}`}
                         >
                             {f}
                         </button>
@@ -171,19 +144,19 @@ export default function FeaturedServices() {
                             onClick={() => window.open(`https://wa.me/919770816132?text=Hi%2C+I+need+${service.waText}!`, '_blank')}
                             className="group relative bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-[0_12px_32px_rgba(27,59,143,0.13)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col overflow-hidden cursor-pointer"
                         >
-                            {/* Top-right + button */}
+                            {/* + button */}
                             <button
                                 onClick={(e) => e.stopPropagation()}
                                 className="absolute top-3 right-3 w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-ac-primary hover:border-ac-primary transition-colors z-20 shadow-sm"
                             >
-                                <i className="fa-solid fa-plus text-xs"></i>
+                                <SVGIcon name="plus" size={12} />
                             </button>
 
-                            {/* Header */}
+                            {/* Card header */}
                             <div className={`${service.headerBg} px-5 pt-5 pb-4 border-b border-gray-100`}>
                                 <div className="flex items-start gap-3">
-                                    <div className={`${service.iconBg} w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm`}>
-                                        <i className={`${service.icon} ${service.iconColor} text-lg`}></i>
+                                    <div className={`${service.iconBg} ${service.iconColor} w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm`}>
+                                        <SVGIcon name={service.icon} size={22} />
                                     </div>
                                     <div className="flex-1 min-w-0">
                                         {service.badge && (
@@ -202,32 +175,29 @@ export default function FeaturedServices() {
                             {/* Body */}
                             <div className="px-5 pt-4 pb-5 flex flex-col flex-grow">
                                 <p className="text-ac-text-muted text-[13px] leading-relaxed mb-4">{service.description}</p>
-
                                 <div className="mb-4">
                                     <span className="text-[26px] font-extrabold text-ac-gray-dark">{service.price}</span>
                                     <span className="text-ac-text-muted text-sm ml-1">starting from</span>
                                 </div>
-
                                 <div className="mb-4 flex-grow">
                                     <p className="font-semibold text-ac-gray-dark text-[12px] mb-2">What's Included:</p>
                                     <ul className="space-y-1.5">
                                         {service.includes.map((item, idx) => (
                                             <li key={idx} className="flex items-center gap-2 text-[12.5px] text-ac-gray-dark/80">
-                                                <i className="fa-solid fa-circle-check text-ac-green text-sm flex-shrink-0"></i>
+                                                <SVGIcon name="checkcircle" size={16} className="text-green-500 flex-shrink-0" />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
                                     </ul>
                                 </div>
-
                                 <div className="flex items-center gap-2 mt-auto">
                                     {service.isEmergency ? (
                                         <a
                                             href="tel:+919770816132"
                                             onClick={(e) => e.stopPropagation()}
-                                            className="flex-1 py-2.5 rounded-xl font-semibold text-center text-[13px] transition-all shadow flex items-center justify-center gap-1.5 bg-ac-red text-white hover:bg-red-700"
+                                            className="flex-1 py-2.5 rounded-xl font-semibold text-center text-[13px] transition-all shadow flex items-center justify-center gap-1.5 bg-red-600 text-white hover:bg-red-700"
                                         >
-                                            <i className="fa-solid fa-phone-volume"></i> Call Now
+                                            <SVGIcon name="phone" size={14} /> Call Now
                                         </a>
                                     ) : (
                                         <Link
@@ -235,7 +205,7 @@ export default function FeaturedServices() {
                                             onClick={(e) => e.stopPropagation()}
                                             className="flex-1 py-2.5 rounded-xl font-semibold text-center text-[13px] transition-all shadow flex items-center justify-center gap-1.5 bg-ac-primary text-white hover:bg-ac-primary-dark"
                                         >
-                                            <i className="fa-regular fa-calendar-check text-xs"></i> Book Now
+                                            <SVGIcon name="calendar" size={14} /> Book Now
                                         </Link>
                                     )}
                                     <a
@@ -245,7 +215,7 @@ export default function FeaturedServices() {
                                         onClick={(e) => e.stopPropagation()}
                                         className="px-3 py-2.5 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] font-bold text-[13px] hover:bg-[#25D366] hover:text-white transition-all flex items-center gap-1"
                                     >
-                                        <i className="fa-brands fa-whatsapp text-base"></i>
+                                        <SVGIcon name="whatsapp" size={18} />
                                     </a>
                                 </div>
                             </div>

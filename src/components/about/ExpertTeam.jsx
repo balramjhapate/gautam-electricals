@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import SVGIcon from '../SVGIcon';
 
 const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20book%20an%20AC%20service%20with%20your%20expert%20team.';
 
@@ -57,8 +58,8 @@ export default function ExpertTeam() {
                             className="bg-white rounded-2xl p-8 shadow-[0_4px_24px_rgba(0,0,0,0.03)] border border-gray-100 flex flex-col items-center text-center cursor-pointer hover:-translate-y-1 transition-transform duration-300"
                         >
                             {/* Avatar */}
-                            <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center text-[#0ebd5e] text-3xl mb-5">
-                                <i className="fa-regular fa-user"></i>
+                                            <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center text-[#0ebd5e] mb-5">
+                                <SVGIcon name="person" size={36} />
                             </div>
 
                             {/* Info */}

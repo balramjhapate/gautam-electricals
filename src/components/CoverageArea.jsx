@@ -95,8 +95,11 @@ export default function CoverageArea() {
                             >
                                 <div className="flex items-center justify-between mb-3 border-b border-gray-100 pb-2">
                                     <div className="flex items-center gap-2">
-                                        <div className="w-7 h-7 rounded-full bg-ac-primary/10 flex items-center justify-center text-ac-primary group-hover:bg-ac-primary group-hover:text-white transition-colors duration-300 text-xs">
-                                            <i className="fa-solid fa-location-dot"></i>
+                                        <div className="w-7 h-7 rounded-full bg-ac-primary/10 flex items-center justify-center group-hover:bg-ac-primary transition-colors duration-300">
+                                            {/* Google Maps pin SVG */}
+                                            <svg viewBox="0 0 24 24" width="14" height="14" xmlns="http://www.w3.org/2000/svg" className="text-ac-primary group-hover:text-white transition-colors duration-300">
+                                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                            </svg>
                                         </div>
                                         <h3 className="font-bold text-ac-gray-dark text-[14px]">{loc.name}</h3>
                                     </div>
@@ -111,7 +114,10 @@ export default function CoverageArea() {
                                         <span>{loc.pin}</span>
                                     </p>
                                     <p className="text-[12px] text-ac-text-muted flex justify-between items-center">
-                                        <span className="font-medium flex items-center gap-1"><i className="fa-regular fa-clock text-ac-primary text-xs"></i> ETA</span>
+                                        <span className="font-medium flex items-center gap-1">
+                                            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-ac-primary"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                            ETA
+                                        </span>
                                         <span className="font-bold text-ac-gray-dark">{loc.eta}</span>
                                     </p>
                                 </div>
