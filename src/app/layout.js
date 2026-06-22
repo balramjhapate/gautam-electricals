@@ -35,7 +35,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "name": "Gautam Electricals",
   "telephone": ["+919770816132", "+919644494715"],
-  "email": "gautamavnish2000@gmail.com",
+  "email": "gautamelectricals.online@gmail.com",
   "founder": "Avnish Gautam",
   "taxID": "230MVPG9714D1ZV",
   "priceRange": "₹199 - ₹4999",

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
@@ -77,11 +77,11 @@ export default function Footer() {
                                         <p className="text-white font-extrabold text-[16px]">9644494715</p>
                                     </div>
                                 </a>
-                                <a href="mailto:gautamavnish2000@gmail.com" className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-5 py-3 hover:bg-white/15 transition-all group">
+                                <a href="mailto:gautamelectricals.online@gmail.com" className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-5 py-3 hover:bg-white/15 transition-all group">
                                     <i className="fa-solid fa-envelope text-white/60 text-lg"></i>
                                     <div>
                                         <p className="text-white/50 text-[10px] font-semibold">Email</p>
-                                        <p className="text-white font-semibold text-[12px]">gautamavnish2000@gmail.com</p>
+                                        <p className="text-white font-semibold text-[12px]">gautamelectricals.online@gmail.com</p>
                                     </div>
                                 </a>
                             </div>
@@ -174,8 +174,8 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <i className="fa-solid fa-envelope text-white/40 text-sm"></i>
-                                <a href="mailto:gautamavnish2000@gmail.com" className="text-[12px] text-white/65 hover:text-white transition-colors break-all">
-                                    gautamavnish2000@gmail.com
+                                <a href="mailto:gautamelectricals.online@gmail.com" className="text-[12px] text-white/65 hover:text-white transition-colors break-all">
+                                    gautamelectricals.online@gmail.com
                                 </a>
                             </li>
                             <li className="flex items-start gap-3">

@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
                     <br /><br />
                     <strong>Gautam Electricals</strong><br />
                     Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
-                    Email: gautamavnish2000@gmail.com<br />
+                    Email: gautamelectricals.online@gmail.com<br />
                     Phone: +91 9770816132
                 </p>
             </section>
