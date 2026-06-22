@@ -2,13 +2,14 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import SVGIcon from './SVGIcon';
 
 const appliances = [
     {
         id: 'ac',
         title: 'Air Conditioner',
         subtitle: 'AC Repair & Service',
-        icon: 'fa-wind',
+        icon: 'snowflake',
         image: '/images/service-ac.png',
         color: 'from-blue-50 to-indigo-50',
         iconBg: 'bg-blue-100',
@@ -23,7 +24,7 @@ const appliances = [
         id: 'washing',
         title: 'Washing Machine',
         subtitle: 'All Brands Covered',
-        icon: 'fa-rotate',
+        icon: 'rotate',
         image: '/images/service-washing.png',
         color: 'from-teal-50 to-cyan-50',
         iconBg: 'bg-teal-100',
@@ -37,7 +38,7 @@ const appliances = [
         id: 'fridge',
         title: 'Refrigerator',
         subtitle: 'All Models',
-        icon: 'fa-snowflake',
+        icon: 'snowflake',
         image: '/images/service-fridge.png',
         color: 'from-sky-50 to-blue-50',
         iconBg: 'bg-sky-100',
@@ -51,7 +52,7 @@ const appliances = [
         id: 'geyser',
         title: 'Geyser',
         subtitle: 'Water Heater Repair',
-        icon: 'fa-fire-flame-curved',
+        icon: 'flame',
         image: '/images/service-geyser.png',
         color: 'from-red-50 to-orange-50',
         iconBg: 'bg-red-100',
@@ -65,7 +66,7 @@ const appliances = [
         id: 'ro',
         title: 'RO Water Purifier',
         subtitle: 'All Brands',
-        icon: 'fa-droplet',
+        icon: 'droplet',
         image: '/images/service-ro.png',
         color: 'from-cyan-50 to-teal-50',
         iconBg: 'bg-cyan-100',
@@ -79,7 +80,7 @@ const appliances = [
         id: 'microwave',
         title: 'Microwave Oven',
         subtitle: 'All Types',
-        icon: 'fa-bolt',
+        icon: 'bolt',
         image: '/images/service-microwave.png',
         color: 'from-orange-50 to-amber-50',
         iconBg: 'bg-orange-100',
@@ -176,8 +177,8 @@ export default function ServiceCategories() {
                                 {/* Body */}
                                 <div className="p-4">
                                     <div className="flex items-center gap-2.5 mb-3">
-                                        <div className={`w-9 h-9 rounded-lg ${app.iconBg} flex items-center justify-center flex-shrink-0`}>
-                                            <i className={`fa-solid ${app.icon} ${app.iconColor} text-sm`}></i>
+                                        <div className={`w-9 h-9 rounded-lg ${app.iconBg} ${app.iconColor} flex items-center justify-center flex-shrink-0`}>
+                                            <SVGIcon name={app.icon} size={18} />
                                         </div>
                                         <div>
                                             <h3 className="font-extrabold text-ac-gray-dark text-[15px] leading-tight">{app.title}</h3>
