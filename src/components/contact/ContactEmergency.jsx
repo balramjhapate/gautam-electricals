@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function ContactEmergency() {
     return (
@@ -17,10 +17,10 @@ export default function ContactEmergency() {
                     <div className="flex flex-col md:flex-row shadow-[0_4px_24px_rgba(0,0,0,0.15)] rounded-xl overflow-hidden md:min-w-[400px]">
                         <div className="bg-white/10 backdrop-blur-md px-6 py-4 flex flex-col justify-center items-center md:items-start min-w-[200px]">
                             <span className="text-[11px] text-white/70 font-bold uppercase tracking-wider mb-1">Emergency Helpline</span>
-                            <span className="text-[20px] text-white font-bold leading-none">+91 8889539174</span>
+                            <span className="text-[20px] text-white font-bold leading-none">+91 9770816132</span>
                         </div>
                         <a
-                            href="tel:+918889539174"
+                            href="tel:+919770816132"
                             className="bg-white text-red-600 px-8 py-4 font-bold text-[15px] hover:bg-gray-100 transition-colors flex items-center justify-center gap-2"
                         >
                             <i className="fa-solid fa-phone"></i>

@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 
-const WHATSAPP_BOOKING_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20book%20an%20AC%20service%20on%20WhatsApp.';
+const WHATSAPP_BOOKING_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20book%20an%20AC%20service%20on%20WhatsApp.';
 
 export default function BookingHero() {
     return (

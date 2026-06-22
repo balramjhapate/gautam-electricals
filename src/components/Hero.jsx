@@ -1,160 +1,193 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
+const PHONE1 = '+919770816132';
+const PHONE2 = '+919644494715';
+const WA1 = '919770816132';
+const WA2 = '919644494715';
+
+const appliances = [
+    { img: '/images/service-ac.png', label: 'A/C' },
+    { img: '/images/service-washing.png', label: 'Washing Machine' },
+    { img: '/images/service-fridge.png', label: 'Fridge' },
+    { img: '/images/service-microwave.png', label: 'Microwave' },
+    { img: '/images/service-geyser.png', label: 'Geyser' },
+    { img: '/images/service-ro.png', label: 'RO Purifier' },
+];
 
 export default function Hero() {
     return (
-        <section id="home" className="relative w-full bg-white overflow-hidden flex items-center py-16 lg:py-0 bg-grid-pattern" style={{ minHeight: 'calc(100vh - 64px)' }}>
+        <section
+            id="home"
+            className="relative w-full overflow-hidden"
+            style={{ background: 'linear-gradient(135deg, #0a1744 0%, #1B3B8F 50%, #1e60b5 100%)' }}
+        >
+            {/* Decorative blobs */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-10 bg-white blur-[120px] pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full opacity-10 bg-[#f97316] blur-[100px] pointer-events-none"></div>
 
-            {/* Background Decorators */}
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-ac-primary/5 hidden lg:block rounded-bl-full z-0 transform translate-x-1/4 -translate-y-1/4"></div>
+            {/* Faint grid overlay */}
+            <div
+                className="absolute inset-0 pointer-events-none opacity-[0.04]"
+                style={{ backgroundImage: 'linear-gradient(to right,#fff 1px,transparent 1px),linear-gradient(to bottom,#fff 1px,transparent 1px)', backgroundSize: '36px 36px' }}
+            ></div>
 
-            <div className="max-w-container mx-auto w-full relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-10">
+            <div className="max-w-container mx-auto px-4 pt-12 pb-10 lg:pt-16 lg:pb-14 relative z-10">
 
-                {/* MOBILE HERO IMAGE (Top) */}
-                <div
-                    className="w-full mb-6 lg:hidden flex items-center justify-center"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                >
-                    <div className="relative w-full max-w-md aspect-[16/9] rounded-2xl overflow-hidden shadow-xl border border-gray-100">
-                        <img
-                            src="/images/hero-family.png"
-                            alt="Professional AC Repair Bhopal & Indore"
-                            className="w-full h-full object-cover object-center"
-                            loading="lazy"
-                        />
-                        <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full shadow border border-gray-100 flex items-center gap-1.5 z-10">
-                            <div className="w-1.5 h-1.5 bg-ac-green rounded-full animate-pulse"></div>
-                            <span className="font-bold text-ac-gray-dark text-[10px] uppercase tracking-wide">24/7 Available</span>
-                        </div>
-                    </div>
+                {/* Owner badge */}
+                <div className="flex items-center gap-2 mb-6" data-aos="fade-down">
+                    <div className="w-1 h-7 bg-[#f97316] rounded-full flex-shrink-0"></div>
+                    <span className="text-white/70 text-[13px] font-semibold tracking-wide uppercase">
+                        Avnish Gautam — Proprietor
+                    </span>
+                    <span className="ml-auto text-white/40 text-[11px] hidden sm:block">GSTIN: 230MVPG9714D1ZV</span>
                 </div>
 
-                {/* LEFT COLUMN - TEXT CONTENT (48%) */}
-                <div className="w-full lg:w-[48%] flex flex-col items-center lg:items-start text-center lg:text-left">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
 
-                    {/* Prominent Mobile CTA at very top of text */}
-                    <a
-                        href="tel:+918889539174"
-                        onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }}
-                        className="w-[90%] md:w-full max-w-sm bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-6 rounded-lg shadow-lg text-lg flex items-center justify-center gap-2 transition-transform transform hover:-translate-y-0.5 active:scale-95 mb-6 animate-pulse border-2 border-green-500"
-                    >
-                        <i className="fa-solid fa-phone"></i> Call Now: 8889539174
-                    </a>
+                    {/* ── LEFT COLUMN ── */}
+                    <div className="w-full lg:w-[54%]">
 
-                    {/* Main Heading */}
-                    <h1
-                        data-aos="fade-up"
-                        data-aos-delay="300"
-                        className="text-[32px] sm:text-[38px] lg:text-[68px] font-[800] text-ac-gray-dark leading-[1.05] mb-4 tracking-tight"
-                    >
-                        Professional <span className="text-ac-primary">AC Repair</span> in Bhopal & Indore
-                    </h1>
-
-                    {/* Highlighted Price line */}
-                    <div
-                        data-aos="fade-up"
-                        data-aos-delay="400"
-                        className="text-[16px] md:text-[18px] font-bold text-gray-800 bg-yellow-100 px-4 py-2 rounded-lg border border-yellow-300 shadow-sm mb-5 w-full max-w-md mx-auto lg:mx-0"
-                    >
-                        AC Service ₹499 se | Gas Refill ₹999 | Same Day Available
-                    </div>
-
-                    {/* Subheading */}
-                    <p
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                        className="text-[17px] text-ac-text-muted mb-6 max-w-[560px] leading-relaxed"
-                    >
-                        Expert air conditioning repair, maintenance, and installation services across
-                        <strong> Bhopal</strong> and <strong>Indore</strong>. Serving <strong>Arera Colony</strong>,
-                        <strong> MP Nagar</strong>, <strong>Vijay Nagar</strong>, and major areas with
-                        certified technicians and 24/7 emergency support.
-                    </p>
-
-                    {/* Trust Badges — single row, matching reference */}
-                    <div
-                        data-aos="fade-up"
-                        data-aos-delay="700"
-                        className="flex items-center justify-center lg:justify-start gap-x-6 mb-7 w-full flex-wrap"
-                    >
-                        <div className="flex items-center gap-1.5 text-ac-gray-dark font-medium text-[15px]">
-                            <i className="fa-solid fa-check text-ac-green text-xs"></i>
-                            <span>10+ Years Experience</span>
+                        {/* Brand Name */}
+                        <div data-aos="fade-up" data-aos-delay="100">
+                            <h1 className="font-[900] leading-[0.95] tracking-tight mb-1">
+                                <span
+                                    className="block text-[46px] sm:text-[58px] lg:text-[70px]"
+                                    style={{ color: '#ef4444', textShadow: '0 2px 20px rgba(239,68,68,0.3)' }}
+                                >
+                                    GAUTAM
+                                </span>
+                                <span className="block text-[46px] sm:text-[58px] lg:text-[70px] text-white">
+                                    ELECTRICALS
+                                </span>
+                            </h1>
                         </div>
-                        <div className="flex items-center gap-1.5 text-ac-gray-dark font-medium text-[15px]">
-                            <i className="fa-solid fa-check text-ac-green text-xs"></i>
-                            <span>Certified Technicians</span>
-                        </div>
-                        <div className="flex items-center gap-1.5 text-ac-gray-dark font-medium text-[15px]">
-                            <i className="fa-solid fa-check text-ac-green text-xs"></i>
-                            <span>5000+ Happy Customers</span>
-                        </div>
-                    </div>
 
-                    {/* Call to Action Buttons */}
-                    <div className="flex flex-col sm:flex-row lg:flex-col items-stretch sm:items-center lg:items-stretch gap-3 sm:gap-4 mb-5 w-full max-w-sm mx-auto lg:mx-0">
+                        {/* Services line */}
+                        <p
+                            className="text-white/75 text-[14px] sm:text-[15px] font-medium mt-4 mb-5 leading-relaxed"
+                            data-aos="fade-up" data-aos-delay="150"
+                        >
+                            A/C · Washing Machine · Microwave · Fridge · Water Purifier (RO) · Geyser Repair &amp; Fitting
+                        </p>
+
+                        {/* Location */}
+                        <div
+                            className="flex items-center gap-2 text-white/70 text-[13px] mb-6"
+                            data-aos="fade-up" data-aos-delay="180"
+                        >
+                            <i className="fa-solid fa-location-dot text-[#f97316]"></i>
+                            <span>Near Gopal Mandir Teelajamalpura, <strong className="text-white font-bold">Bhopal</strong></span>
+                            <span className="mx-2 text-white/30">|</span>
+                            <span>Also serving <strong className="text-white font-bold">Prayagraj</strong></span>
+                        </div>
+
+                        {/* Call buttons */}
+                        <div
+                            className="grid grid-cols-2 gap-3 mb-3"
+                            data-aos="fade-up" data-aos-delay="220"
+                        >
+                            <a
+                                href={`tel:${PHONE1}`}
+                                className="flex items-center justify-center gap-2 bg-white text-ac-primary font-extrabold py-3.5 px-4 rounded-xl shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all active:scale-95 text-[14px]"
+                            >
+                                <i className="fa-solid fa-phone text-[#f97316] text-sm"></i>
+                                9770816132
+                            </a>
+                            <a
+                                href={`tel:${PHONE2}`}
+                                className="flex items-center justify-center gap-2 bg-white text-ac-primary font-extrabold py-3.5 px-4 rounded-xl shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all active:scale-95 text-[14px]"
+                            >
+                                <i className="fa-solid fa-phone text-[#f97316] text-sm"></i>
+                                9644494715
+                            </a>
+                        </div>
+
+                        {/* WhatsApp buttons */}
+                        <div
+                            className="grid grid-cols-2 gap-3 mb-6"
+                            data-aos="fade-up" data-aos-delay="260"
+                        >
+                            <a
+                                href={`https://wa.me/${WA1}?text=Hi%2C+I+need+appliance+repair+service!`}
+                                target="_blank" rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-4 rounded-xl shadow hover:-translate-y-0.5 transition-all active:scale-95 text-[13.5px]"
+                            >
+                                <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp 1
+                            </a>
+                            <a
+                                href={`https://wa.me/${WA2}?text=Hi%2C+I+need+appliance+repair+service!`}
+                                target="_blank" rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-4 rounded-xl shadow hover:-translate-y-0.5 transition-all active:scale-95 text-[13.5px]"
+                            >
+                                <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp 2
+                            </a>
+                        </div>
+
+                        {/* Book button */}
                         <Link
                             href="/booking"
-                            data-aos="zoom-in"
-                            data-aos-delay="900"
-                            className="btn-primary bg-ac-primary text-white px-7 py-3 rounded-lg text-[16px] font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-ac-primary-dark hover:-translate-y-0.5 hover:shadow-md active:scale-95 w-full"
+                            data-aos="fade-up" data-aos-delay="300"
+                            className="btn-primary w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-extrabold py-3.5 px-8 rounded-xl shadow-lg hover:-translate-y-0.5 transition-all active:scale-95 text-[15px]"
                         >
-                            <i className="fa-regular fa-calendar-check text-sm"></i> Schedule Service
+                            <i className="fa-regular fa-calendar-check"></i> Book Service Now
                         </Link>
 
-                        <a
-                            href="tel:+918889539174"
-                            data-aos="zoom-in"
-                            data-aos-delay="1000"
-                            onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }}
-                            className="bg-white text-ac-primary border border-ac-primary/40 px-7 py-3 rounded-lg text-[16px] font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:border-ac-primary hover:bg-ac-primary/5 hover:-translate-y-0.5 active:scale-95 w-full"
+                        {/* Trust bar */}
+                        <div
+                            className="flex flex-wrap gap-x-5 gap-y-2 mt-7 pt-6 border-t border-white/10"
+                            data-aos="fade-up" data-aos-delay="350"
                         >
-                            <i className="fa-solid fa-phone text-sm"></i> Call: +91 8889539174
-                        </a>
-                    </div>
-
-                    {/* Reference Style Emergency Text */}
-                    <div
-                        data-aos="fade-up"
-                        data-aos-delay="1100"
-                        className="text-ac-text-muted text-[14px] font-medium"
-                    >
-                        Emergency Service Available 24/7: <a href="tel:+918889539174" onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'call_click', {event_category: 'contact', event_label: 'phone_call'}); }} className="text-ac-red font-bold hover:underline tracking-wide">+91 8889539174</a>
-                    </div>
-
-                </div>
-
-                {/* RIGHT COLUMN - IMAGE (52%) */}
-                <div
-                    data-aos="fade-left"
-                    data-aos-delay="600"
-                    className="w-full lg:w-[52%] hidden lg:flex items-center justify-center relative group"
-                >
-                    <a
-                        href="https://wa.me/918889539174?text=Hi,%20I'm%20interested%20in%20your%20AC%20services!"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => { if(typeof window !== 'undefined' && typeof window.gtag === 'function') window.gtag('event', 'whatsapp_click', {event_category: 'contact', event_label: 'whatsapp'}); }}
-                        className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden shadow-xl border border-gray-100 block hover:-translate-y-1 transition-all duration-300"
-                    >
-                        <img
-                            src="/images/hero-family.png"
-                            alt="Professional AC Repair Bhopal"
-                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-all duration-500"
-                            loading="lazy"
-                        />
-
-                        {/* Floating Badge (Top-Right like Patna) */}
-                        <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full shadow border border-gray-100 flex items-center gap-1.5 z-10">
-                            <div className="w-1.5 h-1.5 bg-ac-green rounded-full animate-pulse"></div>
-                            <span className="font-bold text-ac-gray-dark text-[11px] uppercase tracking-wide">24/7 Available</span>
+                            {['10+ Years', 'Certified Techs', '5000+ Customers', '24/7 Emergency'].map((t) => (
+                                <div key={t} className="flex items-center gap-1.5 text-white/65 text-[12px] font-medium">
+                                    <i className="fa-solid fa-check text-[#f97316] text-[10px]"></i>
+                                    {t}
+                                </div>
+                            ))}
                         </div>
-                    </a>
+                    </div>
+
+                    {/* ── RIGHT COLUMN — appliance grid (desktop) ── */}
+                    <div
+                        className="w-full lg:w-[42%] hidden lg:grid grid-cols-3 gap-3"
+                        data-aos="fade-left" data-aos-delay="200"
+                    >
+                        {appliances.map((a, i) => (
+                            <div
+                                key={i}
+                                className="relative bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl overflow-hidden aspect-square group hover:border-white/40 hover:bg-white/15 transition-all duration-300 cursor-pointer"
+                                onClick={() => window.open(`https://wa.me/${WA1}?text=Hi%2C+I+need+${encodeURIComponent(a.label)}+repair!`, '_blank')}
+                            >
+                                <img
+                                    src={a.img}
+                                    alt={a.label}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="eager"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-2 px-2">
+                                    <p className="text-white text-[10px] font-bold text-center leading-tight">{a.label}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
+                {/* Mobile appliance scroll */}
+                <div
+                    className="lg:hidden flex gap-3 overflow-x-auto pb-2 mt-6 snap-scroll-x"
+                    data-aos="fade-up" data-aos-delay="300"
+                >
+                    {appliances.map((a, i) => (
+                        <div
+                            key={i}
+                            className="flex-shrink-0 snap-item bg-white/10 border border-white/15 rounded-xl overflow-hidden w-20 h-20"
+                            onClick={() => window.open(`https://wa.me/${WA1}?text=Hi%2C+I+need+${encodeURIComponent(a.label)}+repair!`, '_blank')}
+                        >
+                            <img src={a.img} alt={a.label} className="w-full h-full object-cover" loading="eager" />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

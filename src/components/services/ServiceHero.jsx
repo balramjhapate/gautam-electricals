@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 
 export default function ServiceHero() {
@@ -14,7 +14,7 @@ export default function ServiceHero() {
 
                 {/* Main Heading */}
                 <h1 className="text-[32px] md:text-[42px] font-bold text-white mb-4 tracking-tight leading-tight" data-aos="fade-up" data-aos-delay="100">
-                    Professional AC Services in Bhopal & Indore
+                    Professional AC Services in Bhopal & Prayagraj
                 </h1>
 
                 {/* Subtitle */}

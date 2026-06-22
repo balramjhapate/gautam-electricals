@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function PrivacyPolicy() {
     return (
@@ -36,10 +36,10 @@ export default function PrivacyPolicy() {
                 <p className="text-ac-text-muted leading-relaxed">
                     If you have any questions about this Privacy Policy, please contact us at:
                     <br /><br />
-                    <strong>AC Repair Bhopal & Indore</strong><br />
+                    <strong>Gautam Electricals</strong><br />
                     Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
-                    Email: bhopalservice998@gmail.com<br />
-                    Phone: +91 8889539174
+                    Email: gautamavnish2000@gmail.com<br />
+                    Phone: +91 9770816132
                 </p>
             </section>
         </div>

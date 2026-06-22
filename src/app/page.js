@@ -1,4 +1,5 @@
-import Hero from "../components/Hero";
+﻿import Hero from "../components/Hero";
+import ServiceCategories from "../components/ServiceCategories";
 import CoverageArea from "../components/CoverageArea";
 import FeaturedServices from "../components/FeaturedServices";
 import Comparison from "../components/Comparison";
@@ -9,25 +10,25 @@ import EmergencyCTA from "../components/EmergencyCTA";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "AC Repair Bhopal | AC Service ₹499 | Same Day | 8889539174",
-  description: "Best AC repair service in Bhopal & Indore. AC service ₹499 se shuru, same day available, gas refill ₹999. Call 8889539174. All brands — LG, Voltas, Daikin.",
-  keywords: "AC repair Bhopal, AC service Bhopal, AC mechanic Bhopal, AC gas refill Bhopal, AC cleaning Bhopal, AC repair Indore, split AC repair Bhopal, AC not cooling Bhopal",
+  title: "Gautam Electricals | AC, Fridge, Washing Machine, Geyser, RO Repair Bhopal & Prayagraj",
+  description: "Expert home appliance repair in Bhopal & Prayagraj. AC, Washing Machine, Refrigerator, Microwave, Geyser, RO repair & service starting ₹199. Call +91 9770816132. Same-day available.",
+  keywords: "appliance repair Bhopal, Gautam Electricals, washing machine repair Bhopal, refrigerator repair Bhopal, geyser repair Bhopal, RO repair Bhopal, Gautam Electricals, appliance service Prayagraj",
   alternates: {
-    canonical: "https://ac-service-bhopal-indore.vercel.app/",
+    canonical: "https://gautamelectricals.online/",
   },
 };
-
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       <Hero />
-      <CoverageArea />
+      <ServiceCategories />
       <FeaturedServices />
-      <Comparison />
+      <CoverageArea />
       <Testimonials />
       <WhyChooseUs />
       <StatisticsCounter />
+      <Comparison />
       <EmergencyCTA />
     </main>
   );

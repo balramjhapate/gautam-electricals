@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+﻿import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import AOSInit from "../components/AOSInit";
@@ -12,33 +12,36 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Best AC Repair in Bhopal | 24/7 Emergency AC Repair & Service",
+  title: "Gautam Electricals | AC, Washing Machine, Fridge, Geyser, RO Repair Bhopal & Prayagraj",
   description:
-    "Professional AC repair, servicing, installation and maintenance in Bhopal and Indore, Madhya Pradesh. 24/7 emergency repair available. Call +91 8889539174 now!",
+    "Expert home appliance repair in Bhopal & Prayagraj. AC, Washing Machine, Refrigerator, Microwave, Geyser, RO repair & service. 24/7 emergency available. Call +91 9770816132.",
   keywords:
-    "Best AC repair Bhopal, AC repair Bhopal, AC service Bhopal, AC service Indore, AC repair Indore, AC maintenance Madhya Pradesh, AC installation Bhopal, 24/7 AC repair",
+    "Gautam Electricals, washing machine repair Bhopal, refrigerator repair Bhopal, geyser repair Bhopal, RO repair Bhopal, appliance repair Prayagraj, Gautam Electricals, home appliance service Bhopal",
   robots: "index, follow",
   viewport: "width=device-width, initial-scale=1",
   alternates: {
-    canonical: "https://ac-service-bhopal-indore.vercel.app/",
+    canonical: "https://gautamelectricals.online/",
   },
   openGraph: {
-    title: "Best AC Repair in Bhopal & Indore | 24/7 AC Repair",
-    description: "Professional AC repair & services in Bhopal & Indore. Call +91 8889539174.",
+    title: "Gautam Electricals | Home Appliance Repair Bhopal & Prayagraj",
+    description: "Expert AC, Washing Machine, Fridge, Geyser & RO repair in Bhopal & Prayagraj. Call +91 9770816132.",
     type: "website",
-    url: "https://ac-service-bhopal-indore.vercel.app/",
+    url: "https://gautamelectricals.online/",
   },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "AC Repair Bhopal & Indore",
-  "telephone": "+918889539174",
-  "priceRange": "₹499 - ₹4999",
+  "name": "Gautam Electricals",
+  "telephone": ["+919770816132", "+919644494715"],
+  "email": "gautamavnish2000@gmail.com",
+  "founder": "Avnish Gautam",
+  "taxID": "230MVPG9714D1ZV",
+  "priceRange": "₹199 - ₹4999",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Nariyal Kheda, Near DIG Bungalow, Old Bhopal",
+    "streetAddress": "Near Gopal Mandir Teelajamalpura",
     "addressLocality": "Bhopal",
     "addressRegion": "Madhya Pradesh",
     "postalCode": "462001",
@@ -49,11 +52,15 @@ const jsonLd = {
     "latitude": 23.2599,
     "longitude": 77.4126
   },
-  "url": "https://ac-service-bhopal-indore.vercel.app",
+  "url": "https://gautamelectricals.online",
   "openingHours": "Mo-Su 08:00-21:00",
-  "description": "Professional AC repair, service, and installation in Bhopal and Indore. Same day service available from ₹499.",
-  "areaServed": ["Bhopal", "Indore"],
-  "serviceType": ["AC Repair", "AC Service", "AC Installation", "AC Gas Refill", "AC Cleaning"]
+  "description": "Expert home appliance repair service in Bhopal & Prayagraj. AC, Washing Machine, Refrigerator, Microwave, Geyser, RO repair with certified technicians and 24/7 emergency support.",
+  "areaServed": ["Bhopal", "Prayagraj"],
+  "serviceType": [
+    "AC Repair", "AC Service", "AC Installation", "AC Gas Refill",
+    "Washing Machine Repair", "Refrigerator Repair", "Microwave Repair",
+    "Geyser Repair", "RO Water Purifier Service"
+  ]
 };
 
 export default function RootLayout({ children }) {

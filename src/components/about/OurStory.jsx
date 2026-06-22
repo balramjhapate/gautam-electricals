@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20AC%20services.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20AC%20services.';
 
 const stats = [
     { value: '10+', label: 'Years of Experience' },
@@ -17,16 +17,16 @@ export default function OurStory() {
 
                     {/* Left: Text Content */}
                     <div data-aos="fade-right">
-                        <h2 className="text-[32px] font-bold text-gray-900 mb-6">Our Story</h2>
+                        <h2 className="text-[32px] font-[900] text-gray-900 mb-6">Our Story</h2>
                         <div className="space-y-5 text-[15.5px] text-gray-600 leading-relaxed">
                             <p>
-                                AC Service Bhopal was founded in 2012 with a simple mission: to provide reliable, professional AC solutions to the people of MP. What started as a small team of 2 technicians has grown into Bhopal's most trusted AC service provider.
+                                Gautam Electricals was founded with a simple mission: to provide reliable, professional home appliance repair to the families of Bhopal &amp; Prayagraj. What started as a small AC repair team has grown into the region's most trusted multi-appliance service provider.
                             </p>
                             <p>
-                                We understand how important a comfortable environment is, especially during the sweltering heat of summer. Our team of certified technicians brings years of experience and technical expertise to every job, ensuring your AC operates at peak efficiency and reliability.
+                                Today we repair AC, Washing Machine, Refrigerator, Microwave, Geyser and RO Water Purifiers — covering virtually every appliance in your home. Our certified technicians bring years of experience and use genuine spare parts on every job.
                             </p>
                             <p>
-                                From emergency repair services to comprehensive annual maintenance, we take pride in our commitment to quality workmanship, transparent pricing, and exceptional customer service.
+                                We believe in transparent pricing, no hidden charges, and building long-term relationships with our customers. That's why 5,000+ families in Bhopal &amp; Prayagraj trust Gautam Electricals year after year.
                             </p>
                         </div>
                     </div>

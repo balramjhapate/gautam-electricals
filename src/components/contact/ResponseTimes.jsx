@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20book%20a%20fast%20AC%20service%20visit.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20book%20a%20fast%20AC%20service%20visit.';
 
 const times = [
     { title: "Within Bhopal City", time: "30 minutes", bg: "bg-green-50", text: "text-green-600", icon: "fa-regular fa-clock" },

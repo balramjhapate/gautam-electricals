@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20book%20an%20AC%20service%20with%20your%20expert%20team.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20book%20an%20AC%20service%20with%20your%20expert%20team.';
 
 const team = [
     {

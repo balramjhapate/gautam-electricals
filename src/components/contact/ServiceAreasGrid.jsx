@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20book%20AC%20service%20in%20my%20area.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20book%20AC%20service%20in%20my%20area.';
 
 const areas = [
     { name: "MP Nagar", sub: "Zone-I & Zone-II", pincode: "462011" },

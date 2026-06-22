@@ -1,12 +1,12 @@
-import React from 'react';
+﻿import React from 'react';
 import Image from 'next/image';
 import LandingForm from '../../components/LandingForm';
 
 export const metadata = {
-    title: "AC Repair Bhopal | Same Day Service ₹449 | Call 8889539174",
-    description: "AC kharab ho gayi? Bhopal mein same day AC repair service ₹449 se. Gas refill ₹999. 30 min mein technician. Call ya WhatsApp: 8889539174",
+    title: "Gautam Electricals | Same Day Service ₹449 | Call 9770816132",
+    description: "AC kharab ho gayi? Bhopal mein same day AC repair service ₹449 se. Gas refill ₹999. 30 min mein technician. Call ya WhatsApp: 9770816132",
     alternates: {
-        canonical: "https://ac-service-bhopal-indore.vercel.app/landing",
+        canonical: "https://gautamelectricals.online/landing",
     },
     robots: {
         index: false,
@@ -35,13 +35,13 @@ export default function LandingPage() {
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10 w-full max-w-lg mx-auto">
                     <a
-                        href="tel:+918889539174"
+                        href="tel:+919770816132"
                         className="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg text-lg flex items-center justify-center gap-2 transition-transform transform hover:scale-105"
                     >
-                        <i className="fa-solid fa-phone"></i> Abhi Call Karo — 8889539174
+                        <i className="fa-solid fa-phone"></i> Abhi Call Karo — 9770816132
                     </a>
                     <a
-                        href="https://wa.me/918889539174?text=Hi,%20AC%20service%20chahiye%20Bhopal%20mein"
+                        href="https://wa.me/919770816132?text=Hi,%20AC%20service%20chahiye%20Bhopal%20mein"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white border-2 border-green-600 text-green-600 hover:bg-green-50 font-bold py-4 px-8 rounded-lg shadow text-lg flex items-center justify-center gap-2 transition-transform transform hover:scale-105"
@@ -73,7 +73,7 @@ export default function LandingPage() {
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Water wash</li>
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Cooling check</li>
                             </ul>
-                            <a href="tel:+918889539174" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
+                            <a href="tel:+919770816132" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
                         </div>
                         {/* Box 2 */}
                         <div className="bg-white p-6 rounded-xl shadow-xl border-2 border-blue-500 text-center relative transform md:-translate-y-2">
@@ -85,7 +85,7 @@ export default function LandingPage() {
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Deep cleaning</li>
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Performance optimization</li>
                             </ul>
-                            <a href="tel:+918889539174" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
+                            <a href="tel:+919770816132" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
                         </div>
                         {/* Box 3 */}
                         <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100 text-center hover:shadow-lg transition-shadow">
@@ -96,7 +96,7 @@ export default function LandingPage() {
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Pure refrigerant gas</li>
                                 <li><i className="fa-solid fa-check text-green-500 mr-2"></i>Optimal cooling setup</li>
                             </ul>
-                            <a href="tel:+918889539174" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
+                            <a href="tel:+919770816132" className="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700">Call Now</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@ export default function LandingPage() {
                                 <i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i><i className="fa-solid fa-star"></i>
                             </div>
                             <p className="text-gray-700 italic mb-4 text-sm">"Same day aye, ₹699 mein poora service kiya"</p>
-                            <p className="font-bold text-sm text-gray-900">— Priya, Vijay Nagar Indore</p>
+                            <p className="font-bold text-sm text-gray-900">— Priya, Vijay Nagar Prayagraj</p>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                             <div className="flex text-yellow-400 mb-3 text-sm">
@@ -174,7 +174,7 @@ export default function LandingPage() {
             {/* BOTTOM CTA (sticky on mobile) */}
             <div className="fixed bottom-0 left-0 right-0 p-3 bg-white border-t border-gray-200 md:hidden z-[9999] shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex justify-center">
                 <a
-                    href="tel:+918889539174"
+                    href="tel:+919770816132"
                     className="w-full bg-green-600 text-white font-bold py-3.5 rounded-lg text-center text-[16px] shadow-sm flex items-center justify-center gap-2"
                 >
                     <i className="fa-solid fa-phone"></i> Call Now — Free Estimate

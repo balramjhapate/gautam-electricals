@@ -1,8 +1,8 @@
-import React from 'react';
+﻿import React from 'react';
 
 export const metadata = {
-    title: 'Disclaimer - AC Service Bhopal & Indore',
-    description: 'Disclaimer and legal notice for AC Service Bhopal & Indore website.',
+    title: 'Disclaimer - Gautam Electricals & Prayagraj',
+    description: 'Disclaimer and legal notice for Gautam Electricals & Prayagraj website.',
 };
 
 export default function DisclaimerPage() {
@@ -14,7 +14,7 @@ export default function DisclaimerPage() {
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-ac-primary">1. General Information</h2>
                 <p className="text-ac-text-muted leading-relaxed">
-                    The information provided on this website (AC Service Bhopal & Indore) is for general
+                    The information provided on this website (Gautam Electricals & Prayagraj) is for general
                     informational purposes only. While we endeavour to keep the information up to date
                     and correct, we make no representations or warranties of any kind, express or implied,
                     about the completeness, accuracy, reliability, suitability, or availability of the
@@ -36,7 +36,7 @@ export default function DisclaimerPage() {
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4 text-ac-primary">3. Service Area & Availability</h2>
                 <p className="text-ac-text-muted leading-relaxed">
-                    Our services are primarily available in Bhopal and Indore. Service availability,
+                    Our services are primarily available in Bhopal and Prayagraj. Service availability,
                     pricing, and response times may vary based on your location, demand, and other
                     factors. Please contact us directly to confirm service availability in your area.
                 </p>
@@ -57,10 +57,10 @@ export default function DisclaimerPage() {
                 <p className="text-ac-text-muted leading-relaxed">
                     If you have any questions about this Disclaimer, please contact us at:
                     <br /><br />
-                    <strong>AC Repair Bhopal & Indore</strong><br />
+                    <strong>Gautam Electricals</strong><br />
                     Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
-                    Email: bhopalservice998@gmail.com<br />
-                    Phone: +91 8889539174
+                    Email: gautamavnish2000@gmail.com<br />
+                    Phone: +91 9770816132
                 </p>
             </section>
         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import AboutHero from '../../components/about/AboutHero';
 import OurStory from '../../components/about/OurStory';
 import OurValues from '../../components/about/OurValues';
@@ -7,7 +7,7 @@ import AboutTestimonials from '../../components/about/AboutTestimonials';
 import BottomCTA from '../../components/about/BottomCTA';
 
 export const metadata = {
-    title: 'About Us - AC Service Bhopal & Indore',
+    title: 'About Us - Gautam Electricals & Prayagraj',
     description: 'Your trusted partner for professional AC services. Over a decade of experience in keeping homes and businesses comfortable.',
 };
 

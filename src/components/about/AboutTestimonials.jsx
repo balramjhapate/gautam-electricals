@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20saw%20your%20customer%20reviews%20and%20would%20like%20to%20book%20an%20AC%20service.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20saw%20your%20customer%20reviews%20and%20would%20like%20to%20book%20an%20AC%20service.';
 
 const testimonials = [
     {
@@ -10,7 +10,7 @@ const testimonials = [
         date: "12/05/2023",
     },
     {
-        quote: "Had my new split AC installed by AC Service Bhopal. The installation was clean, professional, and completed on time. The technician explained everything clearly.",
+        quote: "Had my new split AC installed by Gautam Electricals. The installation was clean, professional, and completed on time. The technician explained everything clearly.",
         name: "Neha Verma",
         location: "Arera Colony, Bhopal",
         date: "14/06/2023",

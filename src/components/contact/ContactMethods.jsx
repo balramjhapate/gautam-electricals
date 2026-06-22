@@ -1,15 +1,15 @@
-import React from 'react';
+﻿import React from 'react';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20want%20to%20contact%20you%20for%20AC%20services.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20want%20to%20contact%20you%20for%20AC%20services.';
 const LOCATION_MAP_URL = 'https://maps.app.goo.gl/PW7ZrnJDPTaAxLji8';
 
 const methods = [
     {
         title: "Phone Support",
-        info: "+91 8889539174",
+        info: "+91 9770816132",
         desc: "Emergency support within 30 mins",
         btnText: "Call Now",
-        link: "tel:+918889539174",
+        link: "tel:+919770816132",
         btnColor: "bg-[#25d366]", // Green as per image but the call is red in image, wait image shows green for call button too
         btnIcon: "fa-solid fa-phone",
         icon: "fa-solid fa-phone-volume",
@@ -18,10 +18,10 @@ const methods = [
     },
     {
         title: "WhatsApp",
-        info: "+91 8889539174",
+        info: "+91 9770816132",
         desc: "Instant replies for quick queries",
         btnText: "Send a Message",
-        link: "https://wa.me/918889539174",
+        link: "https://wa.me/919770816132",
         btnColor: "bg-[#25d366]",
         btnIcon: "fa-brands fa-whatsapp",
         icon: "fa-brands fa-whatsapp",

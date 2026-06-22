@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from 'next/link';
 
-const WHATSAPP_URL = 'https://wa.me/918889539174?text=Hi,%20I%20would%20like%20to%20contact%20you%20for%20AC%20service.';
+const WHATSAPP_URL = 'https://wa.me/919770816132?text=Hi,%20I%20would%20like%20to%20contact%20you%20for%20AC%20service.';
 
 export default function BottomCTA() {
     return (

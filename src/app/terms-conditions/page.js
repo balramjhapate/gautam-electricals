@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 export default function TermsConditions() {
     return (
@@ -18,7 +18,7 @@ export default function TermsConditions() {
                 <h2 className="text-2xl font-semibold mb-4 text-ac-primary">2. Service Bookings</h2>
                 <p className="text-ac-text-muted leading-relaxed">
                     Bookings are subject to availability of technicians in your specified area
-                    (Bhopal or Indore). We reserve the right to cancel or reschedule appointments.
+                    (Bhopal or Prayagraj). We reserve the right to cancel or reschedule appointments.
                 </p>
             </section>
 
@@ -34,10 +34,10 @@ export default function TermsConditions() {
                 <h2 className="text-2xl font-semibold mb-4 text-ac-primary">4. Contact Information</h2>
                 <p className="text-ac-text-muted leading-relaxed">
                     For any legal inquiries, please contact:<br /><br />
-                    <strong>AC Repair Bhopal & Indore</strong><br />
+                    <strong>Gautam Electricals</strong><br />
                     Address: Nariyal Kheda, Near DIG Bungalow, Old Bhopal, Madhya Pradesh<br />
-                    Email: bhopalservice998@gmail.com<br />
-                    Phone: +91 8889539174
+                    Email: gautamavnish2000@gmail.com<br />
+                    Phone: +91 9770816132
                 </p>
             </section>
         </div>

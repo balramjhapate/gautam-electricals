@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React from 'react';
 
 const BRANDS = [
@@ -10,7 +10,7 @@ const BRANDS = [
 export default function BrandsWeService() {
     const handleBrandClick = (brand) => {
         const message = `Hi, I have an ${brand} AC and would like to book a service.`;
-        const url = `https://wa.me/918889539174?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/919770816132?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 

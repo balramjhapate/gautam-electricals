@@ -3,9 +3,36 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+function GELogo({ size = 'md' }) {
+    const s = size === 'sm' ? 32 : 38;
+    return (
+        <Link href="/" className="flex items-center gap-2.5 group" aria-label="Gautam Electricals Home">
+            <svg width={s} height={s} viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                <rect width="40" height="40" rx="10" fill="#1B3B8F" />
+                <polygon points="24,4 12,22 20,22 16,36 28,18 20,18" fill="#f97316" />
+            </svg>
+            <div className="flex flex-col leading-none">
+                <span className="font-extrabold text-ac-gray-dark text-[16px] tracking-tight group-hover:text-ac-primary transition-colors">
+                    Gautam
+                </span>
+                <span className="text-[10px] font-bold tracking-[0.12em] uppercase text-ge-accent">
+                    Electricals
+                </span>
+            </div>
+        </Link>
+    );
+}
+
 export default function Header() {
-    const [navbar, setNavbar] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
 
     const navLinks = [
         { name: 'Home', href: '/' },
@@ -16,73 +43,89 @@ export default function Header() {
     ];
 
     return (
-        <nav id="navbar" className={`w-full bg-white/95 backdrop-blur-md transition-all duration-300 z-[999] top-0 border-b border-gray-100 ${navbar ? 'fixed' : 'sticky shadow-sm'}`}>
-            <div className="justify-between mx-auto max-w-container md:items-center md:flex h-[56px] lg:h-[64px]">
+        <nav className={`w-full bg-white/95 backdrop-blur-md z-[999] sticky top-0 border-b border-gray-100 transition-shadow duration-300 ${scrolled ? 'shadow-md' : 'shadow-sm'}`}>
+            <div className="max-w-container mx-auto flex items-center justify-between h-[56px] lg:h-[64px] px-4">
 
-                {/* LOGO (Left) */}
-                <div className="flex items-center justify-between w-full md:w-auto h-full px-4 md:px-0">
-                    <Link href="/" className="flex items-center gap-2" data-aos="fade-in" data-aos-delay="100">
-                        <div className="w-9 h-9 rounded-full bg-ac-primary/10 flex items-center justify-center text-ac-primary text-xl">
-                            <i className="fa-solid fa-snowflake"></i>
-                        </div>
-                        <div className="flex flex-col leading-none">
-                            <span className="font-bold text-ac-gray-dark text-base tracking-tight">AC Repair</span>
-                            <span className="text-ac-primary text-[9px] font-bold tracking-[0.15em] uppercase">Bhopal & Indore</span>
-                        </div>
-                    </Link>
+                {/* Logo */}
+                <GELogo />
 
-                    {/* HAMBURGER ICON (Mobile) */}
-                    <button
-                        className="md:hidden p-2 text-ac-gray-dark"
-                        onClick={() => setNavbar(!navbar)}
-                        aria-label="Toggle Menu"
+                {/* Desktop Nav */}
+                <ul className="hidden md:flex items-center gap-0.5">
+                    {navLinks.map((link) => (
+                        <li key={link.href}>
+                            <Link
+                                href={link.href}
+                                className={`px-4 py-1.5 text-[14px] font-medium rounded-lg transition-all ${pathname === link.href
+                                    ? 'text-ac-primary bg-ac-primary/8'
+                                    : 'text-ac-gray-dark hover:text-ac-primary hover:bg-ac-primary/5'
+                                    }`}
+                            >
+                                {link.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+
+                {/* Desktop Right Actions */}
+                <div className="hidden md:flex items-center gap-3">
+                    <a
+                        href="tel:+919770816132"
+                        className="text-ac-gray-dark font-semibold text-[14px] hover:text-ac-primary transition-colors flex items-center gap-1.5"
                     >
-                        <i className={`fa-solid ${navbar ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
-                    </button>
-                </div>
-
-                {/* CENTERED NAVIGATION (Desktop) — plain links, no pill container */}
-                <div className="hidden md:flex flex-1 justify-center">
-                    <ul className="flex items-center gap-1">
-                        {navLinks.map((link, index) => (
-                            <li key={link.href} data-aos="fade-in" data-aos-delay={100 * (index + 1)}>
-                                <Link
-                                    href={link.href}
-                                    className={`px-4 py-1.5 text-[14px] font-medium transition-all ${pathname === link.href ? 'text-ac-primary' : 'text-ac-gray-dark hover:text-ac-primary'
-                                        }`}
-                                >
-                                    {link.name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* RIGHT ACTIONS (Desktop) */}
-                <div className="hidden md:flex items-center gap-5" data-aos="fade-in" data-aos-delay="600">
-                    <a href="tel:+918889539174" className="text-ac-gray-dark font-medium text-[14px] hover:text-ac-primary transition-colors flex items-center gap-1.5">
-                        <i className="fa-solid fa-phone text-xs opacity-70"></i> 8889539174
+                        <i className="fa-solid fa-phone text-xs text-ge-accent"></i>
+                        97708 16132
                     </a>
-                    <Link href="/booking" className="bg-ac-primary text-white px-5 py-2 rounded-lg font-semibold text-[14px] shadow-sm hover:bg-ac-primary-dark hover:-translate-y-0.5 transition-all active:scale-95 flex items-center gap-2">
-                        <i className="fa-regular fa-calendar-check text-xs"></i> Book Now
+                    <Link
+                        href="/booking"
+                        className="bg-ac-primary text-white px-5 py-2 rounded-lg font-semibold text-[14px] shadow-sm hover:bg-ac-primary-dark hover:-translate-y-0.5 transition-all active:scale-95 flex items-center gap-1.5"
+                    >
+                        <i className="fa-regular fa-calendar-check text-xs"></i>
+                        Book Now
                     </Link>
                 </div>
+
+                {/* Mobile Hamburger */}
+                <button
+                    className="md:hidden p-2 text-ac-gray-dark rounded-lg hover:bg-gray-100 transition-colors"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle Menu"
+                >
+                    <i className={`fa-solid ${menuOpen ? 'fa-xmark' : 'fa-bars'} text-xl`}></i>
+                </button>
             </div>
 
-            {/* MOBILE NAVIGATION (Simplified) */}
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ${navbar ? 'max-h-[400px] border-t border-ac-border/20' : 'max-h-0'}`}>
-                <div className="flex flex-col p-6 space-y-4 bg-white">
+            {/* Mobile Menu */}
+            <div className={`md:hidden overflow-hidden transition-all duration-300 bg-white ${menuOpen ? 'max-h-[420px] border-t border-gray-100 shadow-lg' : 'max-h-0'}`}>
+                <div className="px-5 py-4 flex flex-col gap-1">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`text-lg font-semibold ${pathname === link.href ? 'text-ac-primary' : 'text-ac-gray-dark'}`}
-                            onClick={() => setNavbar(false)}
+                            onClick={() => setMenuOpen(false)}
+                            className={`py-3 px-4 rounded-xl font-semibold text-[15px] transition-all ${pathname === link.href
+                                ? 'text-ac-primary bg-ac-primary/8'
+                                : 'text-ac-gray-dark hover:bg-gray-50'
+                                }`}
                         >
                             {link.name}
                         </Link>
                     ))}
-                    <a href="tel:+918889539174" className="bg-ac-primary text-white text-center py-4 rounded-xl font-bold">Call Now</a>
+                    <div className="flex gap-2 mt-3 pt-3 border-t border-gray-100">
+                        <a
+                            href="tel:+919770816132"
+                            className="flex-1 flex items-center justify-center gap-2 bg-ac-primary text-white py-3.5 rounded-xl font-bold text-[14px] active:scale-95 transition-all"
+                        >
+                            <i className="fa-solid fa-phone"></i> Call Now
+                        </a>
+                        <a
+                            href="https://wa.me/919770816132?text=Hi%2C+I+need+appliance+service!"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white py-3.5 rounded-xl font-bold text-[14px] active:scale-95 transition-all"
+                        >
+                            <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

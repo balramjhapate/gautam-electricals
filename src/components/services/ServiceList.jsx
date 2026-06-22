@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -217,7 +217,7 @@ const FILTERS = ['All Services', 'Window AC', 'Split AC', 'Cassette AC', 'Tower 
 const ServiceCard = ({ service, index }) => {
     const handleCardClick = () => {
         const message = `Hi, I'm interested in your ${service.title} service!`;
-        const url = `https://wa.me/918889539174?text=${encodeURIComponent(message)}`;
+        const url = `https://wa.me/919770816132?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
 
@@ -337,7 +337,7 @@ export default function ServiceList() {
                 <div className="text-center mb-8 flex flex-col justify-center border-b border-gray-200 pb-6 gap-6">
                     <div>
                         <h2 className="text-[28px] font-bold text-gray-900 mb-2">Our AC Services</h2>
-                        <p className="text-gray-500 text-[15px]">Select from our range of AC services across Bhopal and Indore</p>
+                        <p className="text-gray-500 text-[15px]">Select from our range of AC services across Bhopal and Prayagraj</p>
                     </div>
                 </div>
 

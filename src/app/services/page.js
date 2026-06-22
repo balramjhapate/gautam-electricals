@@ -1,14 +1,14 @@
-import React from 'react';
+﻿import React from 'react';
 import ServiceHero from '../../components/services/ServiceHero';
 import ServiceList from '../../components/services/ServiceList';
 import BrandsWeService from '../../components/services/BrandsWeService';
 import EmergencyCTA from '../../components/EmergencyCTA';
 
 export const metadata = {
-    title: 'AC Service Bhopal — Repair, Gas Refill, Cleaning | ₹499 se',
-    description: 'AC repair, gas refilling, jet wash cleaning, installation in Bhopal & Indore. Certified technicians, same day service. Call 8889539174.',
+    title: 'Gautam Electricals — Repair, Gas Refill, Cleaning | ₹499 se',
+    description: 'AC repair, gas refilling, jet wash cleaning, installation in Bhopal & Prayagraj. Certified technicians, same day service. Call 9770816132.',
     alternates: {
-        canonical: "https://ac-service-bhopal-indore.vercel.app/services",
+        canonical: "https://gautamelectricals.online/services",
     },
 };
 

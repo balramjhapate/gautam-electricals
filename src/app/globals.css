@@ -1,15 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ac-primary: #6366f1;
-  --color-ac-primary-dark: #4f46e5;
-  --color-ac-primary-light: #818cf8;
+  /* Gautam Electricals Brand Colors */
+  --color-ac-primary: #1B3B8F;
+  --color-ac-primary-dark: #142d6e;
+  --color-ac-primary-light: #4F70CF;
+  --color-ge-accent: #f97316;
+  --color-ge-accent-dark: #ea580c;
+
   --color-ac-gray-soft: #f8f9fa;
-  --color-ac-gray-medium: #e9ecef;
-  --color-ac-gray-dark: #343a40;
-  --color-ac-text-main: #212529;
-  --color-ac-text-muted: #6c757d;
-  --color-ac-border: #dee2e6;
+  --color-ac-gray-medium: #e2e8f5;
+  --color-ac-gray-dark: #1e293b;
+  --color-ac-text-main: #1e293b;
+  --color-ac-text-muted: #64748b;
+  --color-ac-border: #cbd5e1;
 
   --color-ac-blue: #1a365d;
   --color-ac-red: #ef4444;
@@ -509,13 +513,44 @@ body {
   animation: floatingWhatsappBounce 3s ease infinite;
 }
 
-/* Grid Background Pattern (Patna Design) */
+/* Grid Background Pattern */
 .bg-grid-pattern {
   background-image:
-    linear-gradient(to right, rgba(99, 102, 241, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(27, 59, 143, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 59, 143, 0.05) 1px, transparent 1px);
   background-size: 30px 30px;
 }
+
+/* Touch Horizontal Scroll for Service Categories */
+.snap-scroll-x {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.snap-scroll-x::-webkit-scrollbar {
+  display: none;
+}
+.snap-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Appliance Card Hover */
+.appliance-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.appliance-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(27, 59, 143, 0.15);
+}
+
+/* Orange Accent Utilities */
+.text-ge-accent { color: var(--color-ge-accent); }
+.bg-ge-accent { background-color: var(--color-ge-accent); }
+.border-ge-accent { border-color: var(--color-ge-accent); }
+.hover\:bg-ge-accent-dark:hover { background-color: var(--color-ge-accent-dark); }
 
 /* Mobile Padding for Sticky Bar */
 @media (max-width: 768px) {
