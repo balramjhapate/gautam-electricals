@@ -67,17 +67,17 @@ export default function Header() {
                 </ul>
 
                 {/* Desktop Right Actions */}
-                <div className="hidden md:flex items-center gap-3">
+                <div className="hidden md:flex items-center gap-2.5">
                     <a
                         href="tel:+919770816132"
-                        className="text-ac-gray-dark font-semibold text-[14px] hover:text-ac-primary transition-colors flex items-center gap-1.5"
+                        className="flex items-center gap-2 bg-[#f97316] hover:bg-[#ea580c] text-white font-bold text-[13.5px] px-4 py-2 rounded-lg shadow-sm hover:-translate-y-0.5 transition-all active:scale-95"
                     >
-                        <i className="fa-solid fa-phone text-xs text-ge-accent"></i>
+                        <i className="fa-solid fa-phone text-xs"></i>
                         97708 16132
                     </a>
                     <Link
                         href="/booking"
-                        className="bg-ac-primary text-white px-5 py-2 rounded-lg font-semibold text-[14px] shadow-sm hover:bg-ac-primary-dark hover:-translate-y-0.5 transition-all active:scale-95 flex items-center gap-1.5"
+                        className="flex items-center gap-1.5 bg-ac-primary hover:bg-ac-primary-dark text-white font-semibold text-[13.5px] px-4 py-2 rounded-lg shadow-sm hover:-translate-y-0.5 transition-all active:scale-95"
                     >
                         <i className="fa-regular fa-calendar-check text-xs"></i>
                         Book Now

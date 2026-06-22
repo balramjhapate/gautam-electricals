@@ -24,8 +24,10 @@ export default function EmergencyBanner() {
 
                 {/* Left: Icon + Badge + Text */}
                 <div className="flex items-center gap-3 overflow-hidden">
-                    <div className="flex shrink-0 w-8 h-8 items-center justify-center rounded-full bg-white/10">
-                        <i className="fa-solid fa-bolt text-[#f97316] text-base animate-pulse"></i>
+                    <div className="flex shrink-0 w-8 h-8 items-center justify-center rounded-full bg-white/10 animate-pulse">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="#f97316" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 2L4.5 13.5H11L10 22L19.5 10.5H13L13 2Z"/>
+                        </svg>
                     </div>
 
                     <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-4 leading-none">
@@ -68,10 +70,18 @@ export default function EmergencyBanner() {
 
                     <button
                         onClick={handleDismiss}
-                        className="text-white/40 hover:text-white transition-colors ml-1 p-1"
-                        aria-label="Dismiss banner"
+                        aria-label="Close banner"
+                        style={{
+                            width: '28px', height: '28px', borderRadius: '6px',
+                            background: 'rgba(0,0,0,0.35)', border: '1px solid rgba(255,255,255,0.2)',
+                            color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            cursor: 'pointer', flexShrink: 0, fontSize: '16px', fontWeight: 900,
+                            transition: 'background 0.15s',
+                        }}
+                        onMouseEnter={e => e.currentTarget.style.background = 'rgba(200,0,0,0.8)'}
+                        onMouseLeave={e => e.currentTarget.style.background = 'rgba(0,0,0,0.35)'}
                     >
-                        <i className="fa-solid fa-xmark text-lg sm:text-xl"></i>
+                        ✕
                     </button>
                 </div>
             </div>
