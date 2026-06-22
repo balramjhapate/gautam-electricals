@@ -198,7 +198,7 @@ export default function Hero() {
                         </div>
 
                         {/* Right — appliance grid */}
-                        <div className="w-[50%] grid grid-cols-3 gap-3 self-start -mt-8 translate-x-4">
+                        <div className="w-[50%] grid grid-cols-3 gap-3 self-start -mt-8 translate-x-10">
                             {appliances.map((a, i) => (
                                 <div
                                     key={i}
