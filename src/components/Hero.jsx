@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const PHONE1 = '+919770816132';
 const PHONE2 = '+919644494715';
@@ -159,11 +160,13 @@ export default function Hero() {
                                 className="relative bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl overflow-hidden aspect-square group hover:border-white/40 hover:bg-white/15 transition-all duration-300 cursor-pointer"
                                 onClick={() => window.open(`https://wa.me/${WA1}?text=Hi%2C+I+need+${encodeURIComponent(a.label)}+repair!`, '_blank')}
                             >
-                                <img
+                                <Image
                                     src={a.img}
                                     alt={a.label}
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                    loading="eager"
+                                    fill
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    sizes="(max-width: 1024px) 0px, 200px"
+                                    priority={i < 3}
                                 />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent py-2 px-2">
                                     <p className="text-white text-[10px] font-bold text-center leading-tight">{a.label}</p>
@@ -181,10 +184,10 @@ export default function Hero() {
                     {appliances.map((a, i) => (
                         <div
                             key={i}
-                            className="flex-shrink-0 snap-item bg-white/10 border border-white/15 rounded-xl overflow-hidden w-20 h-20"
+                            className="relative flex-shrink-0 snap-item bg-white/10 border border-white/15 rounded-xl overflow-hidden w-20 h-20"
                             onClick={() => window.open(`https://wa.me/${WA1}?text=Hi%2C+I+need+${encodeURIComponent(a.label)}+repair!`, '_blank')}
                         >
-                            <img src={a.img} alt={a.label} className="w-full h-full object-cover" loading="eager" />
+                            <Image src={a.img} alt={a.label} fill className="object-cover" sizes="80px" priority={i === 0} />
                         </div>
                     ))}
                 </div>

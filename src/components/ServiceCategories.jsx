@@ -1,6 +1,7 @@
 ﻿"use client";
 import React, { useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const appliances = [
     {
@@ -153,10 +154,12 @@ export default function ServiceCategories() {
                             >
                                 {/* Image */}
                                 <div className={`relative w-full aspect-[4/3] bg-gradient-to-br ${app.color} overflow-hidden`}>
-                                    <img
+                                    <Image
                                         src={app.image}
                                         alt={app.title}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                        sizes="(max-width: 640px) 78vw, (max-width: 1024px) 42vw, 33vw"
                                         loading="lazy"
                                     />
                                     {app.badge && (
