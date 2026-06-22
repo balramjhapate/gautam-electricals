@@ -21,14 +21,13 @@ export default function FloatingActions() {
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"
                 title="WhatsApp: +91 97708 16132"
-                className="fixed bottom-[76px] right-4 md:bottom-24 md:right-5 z-[9999] flex items-center justify-center"
+                className="fixed bottom-[76px] right-4 md:bottom-24 md:right-5 z-[9999] w-[54px] h-[54px] md:w-[58px] md:h-[58px] flex items-center justify-center"
             >
-                {/* Pulse rings */}
-                <span className="absolute inline-flex w-full h-full rounded-full bg-[#25D366] opacity-60 animate-ping"></span>
-                <span className="absolute inline-flex w-[110%] h-[110%] rounded-full bg-[#25D366] opacity-30 animate-ping [animation-delay:0.4s]"></span>
+                {/* Pulse rings — behind button, no pointer events */}
+                <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-50 animate-ping pointer-events-none"></span>
 
-                {/* Button */}
-                <span className="relative flex items-center justify-center w-[54px] h-[54px] md:w-[58px] md:h-[58px] bg-[#25D366] rounded-full text-white text-[26px] md:text-[28px] shadow-[0_4px_20px_rgba(37,211,102,0.5)] hover:scale-110 hover:shadow-[0_8px_28px_rgba(37,211,102,0.6)] transition-all duration-300">
+                {/* Button face — always on top */}
+                <span className="relative z-10 flex items-center justify-center w-full h-full bg-[#25D366] rounded-full text-white text-[28px] shadow-[0_4px_20px_rgba(37,211,102,0.5)] hover:scale-110 transition-all duration-300">
                     <i className="fa-brands fa-whatsapp"></i>
                 </span>
             </a>
