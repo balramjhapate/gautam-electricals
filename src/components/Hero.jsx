@@ -135,10 +135,10 @@ export default function Hero() {
                         <span className="ml-auto text-white/40 text-[11px]">GSTIN: 230MVPG9714D1ZV</span>
                     </div>
 
-                    <div className="flex items-center justify-between gap-10">
+                    <div className="flex items-center justify-between gap-6">
 
                         {/* Left */}
-                        <div className="w-[54%]">
+                        <div className="w-[48%]">
                             <h1 className="font-[900] leading-[0.95] tracking-tight mb-1">
                                 <span className="block text-[70px]" style={{ color: '#ef4444', textShadow: '0 2px 20px rgba(239,68,68,0.3)' }}>
                                     GAUTAM
@@ -198,11 +198,11 @@ export default function Hero() {
                         </div>
 
                         {/* Right — appliance grid */}
-                        <div className="w-[42%] grid grid-cols-3 gap-3">
+                        <div className="w-[50%] grid grid-cols-3 gap-3">
                             {appliances.map((a, i) => (
                                 <div
                                     key={i}
-                                    className="relative bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl overflow-hidden aspect-square group hover:border-white/40 hover:bg-white/15 transition-all duration-300 cursor-pointer"
+                                    className="relative bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl overflow-hidden aspect-[4/5] group hover:border-white/40 hover:bg-white/15 transition-all duration-300 cursor-pointer"
                                     onClick={() => window.open(`https://wa.me/${WA1}?text=Hi%2C+I+need+${encodeURIComponent(a.label)}+repair!`, '_blank')}
                                 >
                                     <Image
