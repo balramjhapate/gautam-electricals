@@ -86,7 +86,7 @@ export default function Header() {
 
                 {/* Mobile Hamburger */}
                 <button
-                    className="md:hidden p-2 text-ac-gray-dark rounded-lg hover:bg-gray-100 transition-colors"
+                    className="md:hidden p-2 text-ac-primary rounded-lg hover:bg-gray-100 transition-colors"
                     onClick={() => setMenuOpen(!menuOpen)}
                     aria-label="Toggle Menu"
                 >

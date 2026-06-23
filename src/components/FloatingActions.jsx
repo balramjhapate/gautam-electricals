@@ -16,7 +16,7 @@ export default function FloatingActions() {
         <>
             {/* ── Floating WhatsApp — visible on ALL screens ── */}
             {/* Floating WhatsApp */}
-            <div style={{ position: 'fixed', bottom: '80px', right: '16px', zIndex: 99999 }}>
+            <div className="hidden md:block" style={{ position: 'fixed', bottom: '80px', right: '16px', zIndex: 99999 }}>
                 <style>{`
                     @keyframes wa-ping {
                         0% { transform: scale(1); opacity: 0.6; }
