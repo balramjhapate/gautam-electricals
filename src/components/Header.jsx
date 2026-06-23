@@ -104,7 +104,7 @@ export default function Header() {
                             onClick={() => setMenuOpen(false)}
                             className={`py-3 px-4 rounded-xl font-semibold text-[15px] transition-all ${pathname === link.href
                                 ? 'text-ac-primary bg-ac-primary/8'
-                                : 'text-ac-gray-dark hover:bg-gray-50'
+                                : 'text-ac-primary hover:bg-ac-primary/5'
                                 }`}
                         >
                             {link.name}
