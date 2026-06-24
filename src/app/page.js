@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Gautam Electricals | AC, Fridge, Washing Machine, Geyser, RO Repair Bhopal & Prayagraj",
-  description: "Expert home appliance repair in Bhopal & Prayagraj. AC, Washing Machine, Refrigerator, Microwave, Geyser, RO repair & service starting ₹199. Call +91 9770816132. Same-day available.",
+  description: "Expert home appliance repair in Bhopal & Prayagraj. AC, Washing Machine, Refrigerator, Microwave, Geyser, RO repair & service starting ₹350. Call +91 9770816132. Same-day available.",
   keywords: "appliance repair Bhopal, Gautam Electricals, washing machine repair Bhopal, refrigerator repair Bhopal, geyser repair Bhopal, RO repair Bhopal, Gautam Electricals, appliance service Prayagraj",
   alternates: {
     canonical: "https://gautamelectricals.online/",

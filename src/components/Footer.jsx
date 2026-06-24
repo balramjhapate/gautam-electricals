@@ -70,13 +70,6 @@ export default function Footer() {
                                         <p className="text-white font-extrabold text-[16px]">9770816132</p>
                                     </div>
                                 </a>
-                                <a href="tel:+919644494715" className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-5 py-3 hover:bg-white/15 transition-all group">
-                                    <i className="fa-brands fa-whatsapp text-[#25D366] text-xl"></i>
-                                    <div>
-                                        <p className="text-white/50 text-[10px] font-semibold">Call / WhatsApp</p>
-                                        <p className="text-white font-extrabold text-[16px]">9644494715</p>
-                                    </div>
-                                </a>
                                 <a href="mailto:gautamelectricals.online@gmail.com" className="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl px-5 py-3 hover:bg-white/15 transition-all group">
                                     <i className="fa-solid fa-envelope text-white/60 text-lg"></i>
                                     <div>
@@ -161,7 +154,6 @@ export default function Footer() {
                                 <i className="fa-solid fa-phone text-ge-accent mt-1 text-sm"></i>
                                 <div>
                                     <a href="tel:+919770816132" className="text-[13px] text-white/80 hover:text-white font-semibold block">+91 97708 16132</a>
-                                    <a href="tel:+919644494715" className="text-[13px] text-white/80 hover:text-white font-semibold block">+91 96444 94715</a>
                                     <p className="text-[11px] text-ge-accent font-bold uppercase mt-0.5">Emergency: 24/7</p>
                                 </div>
                             </li>
@@ -169,7 +161,6 @@ export default function Footer() {
                                 <i className="fa-brands fa-whatsapp text-[#25D366] text-sm"></i>
                                 <div>
                                     <a href="https://wa.me/919770816132" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/70 hover:text-white transition-colors block">9770816132</a>
-                                    <a href="https://wa.me/919644494715" target="_blank" rel="noopener noreferrer" className="text-[13px] text-white/70 hover:text-white transition-colors block">9644494715</a>
                                 </div>
                             </li>
                             <li className="flex items-center gap-3">

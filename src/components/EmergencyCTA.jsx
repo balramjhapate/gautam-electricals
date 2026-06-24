@@ -51,24 +51,14 @@ export default function EmergencyCTA() {
                                 <i className="fa-solid fa-phone-volume text-ge-accent"></i>
                                 Call Now: +91 97708 16132
                             </a>
-                            <div className="grid grid-cols-2 gap-3">
-                                <a
-                                    href="https://wa.me/919770816132?text=Hi%2C+I+need+appliance+repair+service!"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl text-[12.5px] font-bold hover:bg-[#20ba5a] transition-all shadow hover:-translate-y-0.5"
-                                >
-                                    <i className="fa-brands fa-whatsapp text-lg"></i> 9770816132
-                                </a>
-                                <a
-                                    href="https://wa.me/919644494715?text=Hi%2C+I+need+appliance+repair+service!"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl text-[12.5px] font-bold hover:bg-[#20ba5a] transition-all shadow hover:-translate-y-0.5"
-                                >
-                                    <i className="fa-brands fa-whatsapp text-lg"></i> 9644494715
-                                </a>
-                            </div>
+                            <a
+                                href="https://wa.me/919770816132?text=Hi%2C+I+need+appliance+repair+service!"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-4 rounded-xl text-[12.5px] font-bold hover:bg-[#20ba5a] transition-all shadow hover:-translate-y-0.5"
+                            >
+                                <i className="fa-brands fa-whatsapp text-lg"></i> 9770816132
+                            </a>
                         </div>
 
                         {/* Hours */}

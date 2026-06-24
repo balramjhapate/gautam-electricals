@@ -141,12 +141,6 @@ export default function CoverageArea() {
                     >
                         <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp: 9770816132
                     </a>
-                    <a
-                        href="tel:+919644494715"
-                        className="inline-flex items-center justify-center gap-2 bg-white border-2 border-ac-primary text-ac-primary px-6 py-3 rounded-xl text-[14px] font-bold hover:bg-ac-primary/5 hover:-translate-y-0.5 transition-all active:scale-95"
-                    >
-                        <i className="fa-solid fa-phone"></i> Call: 9644494715
-                    </a>
                 </div>
             </div>
         </section>

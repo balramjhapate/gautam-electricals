@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import SVGIcon from './SVGIcon';
 
 export default function Comparison() {
     return (
@@ -7,7 +8,7 @@ export default function Comparison() {
             <div className="max-w-container mx-auto px-4">
                 <div className="text-center mb-12" data-aos="fade-up">
                     <span className="inline-flex items-center gap-2 bg-ac-primary/10 text-ac-primary text-[12px] font-bold px-4 py-1.5 rounded-full mb-3">
-                        <i className="fa-solid fa-scale-balanced text-xs"></i>
+                        <SVGIcon name="scale" size={13} />
                         Save With Our AMC Plan
                     </span>
                     <h2 className="text-3xl md:text-[38px] font-[900] text-ac-gray-dark mb-3 tracking-tight">
@@ -31,7 +32,7 @@ export default function Comparison() {
 
                         <div className="flex items-center gap-3 px-6 pt-6 pb-4 border-b border-gray-100">
                             <div className="w-11 h-11 rounded-xl bg-ac-primary/10 flex items-center justify-center flex-shrink-0">
-                                <i className="fa-solid fa-shield-halved text-ac-primary text-lg"></i>
+                                <SVGIcon name="shield" size={22} className="text-ac-primary" />
                             </div>
                             <div>
                                 <h3 className="font-[900] text-ac-gray-dark text-[17px] leading-tight">Annual Maintenance Contract</h3>
@@ -68,7 +69,7 @@ export default function Comparison() {
                             <ul className="space-y-2">
                                 {['Priority emergency response', 'Free minor repairs & labour', 'Covers all 6 appliance types', 'Bi-annual deep cleaning'].map((b, i) => (
                                     <li key={i} className="flex items-center gap-2 text-[13px] text-ac-gray-dark">
-                                        <i className="fa-solid fa-circle-check text-ac-green text-sm flex-shrink-0"></i>
+                                        <SVGIcon name="checkcircle" size={16} className="text-ac-green flex-shrink-0" />
                                         {b}
                                     </li>
                                 ))}
@@ -95,7 +96,7 @@ export default function Comparison() {
                     >
                         <div className="flex items-center gap-3 px-6 pt-6 pb-4 border-b border-gray-100">
                             <div className="w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
-                                <i className="fa-regular fa-clock text-gray-500 text-lg"></i>
+                                <SVGIcon name="clock" size={22} className="text-gray-500" />
                             </div>
                             <div>
                                 <h3 className="font-[900] text-ac-gray-dark text-[17px] leading-tight">One-Time Service</h3>
@@ -119,11 +120,11 @@ export default function Comparison() {
                         <div className="px-6 py-4 border-b border-gray-100 space-y-2">
                             <div className="flex items-center justify-between">
                                 <span className="font-semibold text-ac-gray-dark text-[14px]">Per Service Cost</span>
-                                <span className="font-bold text-ac-gray-dark text-[15px]">₹199–₹1,999</span>
+                                <span className="font-bold text-ac-gray-dark text-[15px]">₹350–₹1,999</span>
                             </div>
                             <div className="flex items-center justify-between">
                                 <span className="text-ac-text-muted text-[13px]">Annual cost (3 visits)</span>
-                                <span className="text-ac-gray-dark text-[13px] font-medium">₹597–₹5,997</span>
+                                <span className="text-ac-gray-dark text-[13px] font-medium">₹1,050–₹5,997</span>
                             </div>
                         </div>
 
@@ -132,7 +133,7 @@ export default function Comparison() {
                             <ul className="space-y-2">
                                 {['Single appliance service visit', 'Standard warranty on repair', 'Regular response time'].map((item, i) => (
                                     <li key={i} className="flex items-center gap-2 text-[13px] text-ac-text-muted">
-                                        <i className="fa-solid fa-circle-check text-gray-300 text-sm flex-shrink-0"></i>
+                                        <SVGIcon name="checkcircle" size={16} className="text-gray-300 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
@@ -157,7 +158,7 @@ export default function Comparison() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#25D366]/10 border border-[#25D366] text-[#25D366] font-bold px-6 py-2.5 rounded-xl hover:bg-[#25D366] hover:text-white transition-all duration-300 text-[14px] shadow-sm"
                     >
-                        <i className="fa-brands fa-whatsapp text-lg"></i> Ask about AMC on WhatsApp
+                        <SVGIcon name="whatsapp" size={20} /> Ask about AMC on WhatsApp
                     </a>
                 </div>
             </div>

@@ -5,7 +5,6 @@ import Image from 'next/image';
 
 const PHONE1 = '+919770816132';
 const WA1 = '919770816132';
-const WA2 = '919644494715';
 
 const appliances = [
     { img: '/images/service-ac.png', label: 'A/C' },
@@ -157,29 +156,20 @@ export default function Hero() {
                                 <span>Also serving <strong className="text-white">Prayagraj</strong></span>
                             </div>
 
-                            {/* Call — both numbers on desktop */}
-                            <div className="grid grid-cols-2 gap-3 mb-3">
+                            {/* Call */}
+                            <div className="mb-3">
                                 <a href={`tel:${PHONE1}`}
                                     className="flex items-center justify-center gap-2 bg-white text-ac-primary font-extrabold py-3.5 px-4 rounded-xl shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all text-[14px]">
                                     <i className="fa-solid fa-phone text-[#f97316] text-sm"></i> 9770816132
                                 </a>
-                                <a href="tel:+919644494715"
-                                    className="flex items-center justify-center gap-2 bg-white text-ac-primary font-extrabold py-3.5 px-4 rounded-xl shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all text-[14px]">
-                                    <i className="fa-solid fa-phone text-[#f97316] text-sm"></i> 9644494715
-                                </a>
                             </div>
 
-                            {/* WhatsApp — both on desktop */}
-                            <div className="grid grid-cols-2 gap-3 mb-6">
+                            {/* WhatsApp */}
+                            <div className="mb-6">
                                 <a href={`https://wa.me/${WA1}?text=Hi%2C+I+need+appliance+repair+service!`}
                                     target="_blank" rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-4 rounded-xl shadow hover:-translate-y-0.5 transition-all text-[13.5px]">
-                                    <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp 1
-                                </a>
-                                <a href={`https://wa.me/${WA2}?text=Hi%2C+I+need+appliance+repair+service!`}
-                                    target="_blank" rel="noopener noreferrer"
-                                    className="flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-4 rounded-xl shadow hover:-translate-y-0.5 transition-all text-[13.5px]">
-                                    <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp 2
+                                    <i className="fa-brands fa-whatsapp text-lg"></i> WhatsApp
                                 </a>
                             </div>
 

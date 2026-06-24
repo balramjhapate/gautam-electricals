@@ -135,14 +135,6 @@ export default function FloatingActions() {
                 <i className="fa-solid fa-phone"></i>
             </a>
 
-            <a
-                href="tel:+919644494715"
-                className="hidden md:flex fixed bottom-[168px] left-5 w-[56px] h-[56px] bg-[#f97316] rounded-full items-center justify-center text-white text-[20px] z-[9998] shadow-[0_4px_16px_rgba(249,115,22,0.4)] hover:scale-110 hover:shadow-[0_8px_24px_rgba(249,115,22,0.5)] transition-all duration-300"
-                aria-label="Call: 9644494715"
-                title="Call: +91 96444 94715"
-            >
-                <i className="fa-solid fa-phone"></i>
-            </a>
         </>
     );
 }

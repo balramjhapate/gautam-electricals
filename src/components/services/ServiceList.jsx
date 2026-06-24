@@ -59,7 +59,7 @@ const allServicesData = [
         icon: 'stethoscope', iconBg: 'bg-red-100', iconColor: 'text-red-500',
         headerBg: 'bg-gradient-to-br from-red-50 to-pink-50',
         category: 'Repair', categoryBg: 'bg-red-100 text-red-700',
-        price: '₹199', description: 'Complete diagnostic check to identify AC problems with detailed report',
+        price: '₹350', description: 'Complete diagnostic check to identify AC problems with detailed report',
         includes: ['Complete system diagnosis', 'Detailed problem report'],
         rating: '4.8 (1,200+ bookings)',
         badge: { text: 'Base Fee', type: 'popular' },

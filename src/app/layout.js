@@ -34,11 +34,11 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Gautam Electricals",
-  "telephone": ["+919770816132", "+919644494715"],
+  "telephone": ["+919770816132"],
   "email": "gautamelectricals.online@gmail.com",
   "founder": "Avnish Gautam",
   "taxID": "230MVPG9714D1ZV",
-  "priceRange": "₹199 - ₹4999",
+  "priceRange": "₹350 - ₹4999",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Near Gopal Mandir Teelajamalpura",
